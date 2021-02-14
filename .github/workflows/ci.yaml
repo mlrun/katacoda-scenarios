@@ -9,12 +9,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Katacoda CLI
         run: |
-          sudo npm i katacoda-cli --global
+          sudo npm i katacoda-cli markdownlint-cli --global
       - name: Validate Katacoda scenarios
         run: |
           katacoda validate:all --repo ${{ github.workspace }}
       - name: Validate Katacoda Markdown
         run: |
-          sudo gem install mdl 
-          sudo gem install chef-utils -v 16.6.14
-          mdl ${{ github.workspace }}
+          markdownlint '**/*.md' --ignore node_modules

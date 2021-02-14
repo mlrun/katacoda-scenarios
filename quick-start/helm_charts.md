@@ -2,7 +2,7 @@
 
 The MLRun Kit includes the following Helm charts:
 
-- [MLRun](https://github.com/mlrun/mlrun
+- [MLRun](https://github.com/mlrun/mlrun)
 - [Nuclio](https://github.com/nuclio/nuclio)
 - [Jupyter](https://github.com/jupyterlab/jupyterlab "(+MLRun integrated)")
 - [NFS](https://github.com/kubernetes-retired/external-storage/tree/master/nfs)
@@ -32,14 +32,15 @@ _NOTE_: On production, your docker registry secret will include more fields such
 ```
 
 Where:
-- _<your-registry-server>_ is your Private Docker Registry FQDN. (https://index.docker.io/v1/ for Docker Hub).
-- _<your-username>_ is your Docker username.
-- _<your-password>_ is your Docker password.
-- _<your-email>_ is your Docker email.
+
+- _your-registry-server_ is your Private Docker Registry FQDN. (<https://index.docker.io/v1/> for Docker Hub).
+- _your-username_ is your Docker username.
+- _your-password_ is your Docker password.
+- _your-email_ is your Docker email.
 
 Install MLRun Kit Chart, and note its reference to the pre-created registry credentials:
 
-```
+```shell
 helm --namespace mlrun 
     --install mlrun-kit \
     --wait \
