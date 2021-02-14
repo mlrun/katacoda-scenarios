@@ -1,4 +1,5 @@
 [![MLRun](http://shields.katacoda.com/katacoda/mlrun/count.svg)](https://www.katacoda.com/mlrun "MLRun interactive courses")
+![CI](https://github.com/mlrun/katacoda-scenarios/workflows/CI/badge.svg)
 
 # MLRun interactive scenarios
 
