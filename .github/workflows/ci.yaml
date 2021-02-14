@@ -15,5 +15,6 @@ jobs:
           katacoda validate:all --repo ${{ github.workspace }}
       - name: Validate Katacoda Markdown
         run: |
-          sudo gem install mdl
+          sudo gem install mdl 
+          sudo gem install chef-utils -v 16.6.14
           mdl ${{ github.workspace }}
