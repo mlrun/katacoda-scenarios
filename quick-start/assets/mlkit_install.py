@@ -53,10 +53,11 @@ def _parse_args():
 
 def _spin_and_wait_for_process(process):
     spinner = _get_spinner()
+    print("Executing...")
     while process.poll() is None:
         _print_spinner(spinner)
     print("Execution finished")
-    return process.communicate()[0]
+    return process.communicate()[0].decode()
 
 
 def _print_spinner(spinner):

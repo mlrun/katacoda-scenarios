@@ -16,7 +16,7 @@
 
 MLRUN_VERSION=0.6.0
 
-docker pull mlrun/mlrun-api:${MLRUN_VERSION} &
-docker pull mlrun/mlrun-ui:${MLRUN_VERSION} &
-docker pull mlrun/ml-models:${MLRUN_VERSION} &
-docker pull quay.io/mlrun/jupyter:${MLRUN_VERSION} &
+docker pull quay.io/mlrun/jupyter:${MLRUN_VERSION}
+docker pull mlrun/mlrun-api:${MLRUN_VERSION}
+docker pull mlrun/mlrun-ui:${MLRUN_VERSION}
+docker pull mlrun/ml-models:${MLRUN_VERSION}
