@@ -1,8 +1,12 @@
 # Kubernetes cluster
 
-Ensure your Kubernetes cluster, created by Katacoda, has successfully started and ready to use.
+To spin up your cluster, click on:
 
-*kubectl*, the Kubernetes command-line tool, is available throughout the terminal screen, e.g.:
+`launch.sh`{{execute}}
+
+A wait a few seconds, to allow Katacoda, create your Kubernetes cluster.
+
+Next thing, is running *kubectl*, the Kubernetes command-line tool, which is available throughout the terminal screen, e.g.:
 
 `kubectl get nodes -o wide && kubectl cluster-info`{{execute}}
 
