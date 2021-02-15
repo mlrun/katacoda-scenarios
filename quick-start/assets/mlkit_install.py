@@ -55,6 +55,7 @@ def _spin_and_wait_for_process(process):
     spinner = _get_spinner()
     while process.poll() is None:
         _print_spinner(spinner)
+    print("Execution finished")
     return process.communicate()[0]
 
 
@@ -70,6 +71,7 @@ def _get_spinner():
 
 
 def _popen(cmd):
+    print(f"Running command: {cmd}")
     return subprocess.Popen(
         shlex.split(cmd),
         stdout=subprocess.PIPE,
