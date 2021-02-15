@@ -10,7 +10,7 @@ MLRun provides the following key benefits:
 To learn more, use the below references:
 
 - [Github](https://github.com/mlrun/mlrun#general-concept-and-motivation)
-- [Docs](https://docs.mlrun.org/en/latest/index.html)
+- [Docs](https://docs.mlrun.org/en/latest)
 - [Examples](https://docs.mlrun.org/en/latest/examples.html)
 - [CLI](https://docs.mlrun.org/en/latest/cli.html)
 - [API](https://docs.mlrun.org/en/latest/api/index.html)
