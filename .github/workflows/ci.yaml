@@ -6,18 +6,13 @@ on:
   pull_request:
 
 jobs:
-  validate_katacoda:
-    name: Validate Katacoda
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v2
-      - name: Install validators CLI tools
-        run: |
-          sudo npm i katacoda-cli markdownlint-cli --global
-      - name: Validate Katacoda scenarios
-        run: |
-          katacoda validate:all --repo ${{ github.workspace }}
-      - name: Validate Markdown
-        run: |
-          markdownlint '**/*.md' --ignore node_modules
+      - name: Install
+        run: sudo make install-lint-tools
+      - name: Lint
+        run: make lint
