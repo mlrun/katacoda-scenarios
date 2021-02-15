@@ -18,13 +18,21 @@
                 "text": "helm_charts.md"
             },
             {
-                "title": "Test train & serve a model",
-                "text": "test_train_serve_model.md"
+                "title": "Train",
+                "text": "train.md"
+            },
+            {
+                "title": "Test",
+                "text": "test.md"
+            },
+            {
+                "title": "Serve",
+                "text": "serve.md"
             }
         ],
         "intro": {
             "title": "Introduction",
-			"courseData": "background.sh",
+            "courseData": "background.sh",
             "text": "intro.md"
         },
         "finish": {

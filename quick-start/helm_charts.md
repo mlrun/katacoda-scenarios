@@ -1,12 +1,10 @@
-The MLRun Kit includes the following Helm charts:
+On this step, you will install the MLRun Kit Helm chart which includes the following components:
 
 - [MLRun](https://github.com/mlrun/mlrun)
 - [Nuclio](https://github.com/nuclio/nuclio)
 - [Jupyter](https://github.com/jupyterlab/jupyterlab "(+MLRun integrated)")
 - [NFS](https://github.com/kubernetes-retired/external-storage/tree/master/nfs)
 - [MPI Operator](https://github.com/kubeflow/mpi-operator)
-
-In this tutorial you will install _MLRun_, _Nuclio_ and _Jupyter_.
 
 First, start by creating the namespace for the deployed components,
 
@@ -25,10 +23,10 @@ helm install mlrun-kit \
 
 Now, your MLRun Kit is available and serving at:
 
-- *Jupyer*: `[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]`{{copy}}
+- *Jupyer*: https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
 
-- *MLRun*: `[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]`{{copy}}
+- *MLRun*: https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
 
-- *Nuclio*: `[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]`{{copy}}
+- *Nuclio*: https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
 
 For easy access, use the tabs on the top right screen.
