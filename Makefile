@@ -21,7 +21,7 @@ all:
 	$(error please pick a target)
 
 .PHONY: lint
-lint: lint-markdown lint-katacoda  ## lint all
+lint: lint-markdown lint-katacoda lint-json  ## lint all
 	@echo "Done"
 
 .PHONY: lint-katacoda
@@ -34,6 +34,12 @@ lint-markdown: ## lint markdown files
 	@markdownlint '**/*.md' --ignore node_modules
 	@echo "Markdown files are valid"
 
+.PHONY: lint-json
+lint-json: ## lint json files
+	@echo "Linting json files"
+	@jsonlint **/*.json --quiet
+	@echo "Json files are valid"
+
 .PHONY: install-lint-tools
 install-lint-tools: ## Install lint tools
-	@npm i katacoda-cli markdownlint-cli --global
+	@npm i katacoda-cli markdownlint-cli jsonlint --global
