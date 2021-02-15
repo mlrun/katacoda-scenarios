@@ -12,21 +12,16 @@ First, start by creating the namespace for the deployed components,
 
 Install MLRun Kit chart:
 
-```shell
-helm install mlrun-kit \
-    --namespace mlrun \
-    --version 0.1.0 \
-    --wait \
-    --set global.registry.url=$REGISTRY \
-    v3io-stable/mlrun-kit
-```{{execute}}
+`python3 /usr/local/bin/mlkit_install.py --chart-version 0.1.0 --registry-url ${REGISTRY}`{{execute}}
 
-Now, your MLRun Kit is available and serving at:
+*Note*: Installing MLRun Kit might take several of minutes.
 
-- *Jupyer*: https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
+Now, your MLRun Kit is available and serving at (Click on each link, to make tabs operational):
 
-- *MLRun*: https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
+- [Jupyer](https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])
 
-- *Nuclio*: https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
+- [MLRun](https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])
+
+- [Nuclio](https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])
 
 For easy access, use the tabs on the top right screen.

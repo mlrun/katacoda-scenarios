@@ -4,9 +4,9 @@
 
 MLRun offers a convenient abstraction layer to a wide variety of technology stacks while empowering data engineers and data scientists to define the feature and models.
 
-In the following course you will learn
+In the following course you will learn how to:
 
-- Setup MLRun on a Kubernetes Cluster
-- Train, test and serve a Model
+- Set up MLRun on a Kubernetes Cluster
+- Train, test, and serve a Model
 
 More information about MLRun and its architecture can be found [here](https://docs.mlrun.org/en/latest).

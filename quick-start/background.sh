@@ -14,7 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-docker pull mlrun/mlrun-api:0.6.0 &
-docker pull mlrun/mlrun-ui:0.6.0 &
-docker pull mlrun/ml-models:0.6.0 &
-docker pull quay.io/mlrun/jupyter:0.6.0 &
+MLRUN_VERSION=0.6.0
+
+docker pull mlrun/mlrun-api:${MLRUN_VERSION} &
+docker pull mlrun/mlrun-ui:${MLRUN_VERSION} &
+docker pull mlrun/ml-models:${MLRUN_VERSION} &
+docker pull quay.io/mlrun/jupyter:${MLRUN_VERSION} &

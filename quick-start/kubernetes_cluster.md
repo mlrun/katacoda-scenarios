@@ -2,7 +2,7 @@ To spin up your cluster, click on:
 
 `launch.sh`{{execute}}
 
-A wait a few seconds, to allow Katacoda, create your Kubernetes cluster.
+Wait a few seconds, to allow Katacoda creating your Kubernetes cluster.
 
 Next thing, is running *kubectl*, the Kubernetes command-line tool, which is available throughout the terminal screen, e.g.:
 
