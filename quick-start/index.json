@@ -24,7 +24,6 @@
         ],
         "intro": {
             "title": "Introduction",
-            "code": "launch.sh",
             "text": "intro.md"
         },
         "finish": {
