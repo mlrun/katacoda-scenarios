@@ -27,6 +27,6 @@ Open Nuclio UI and check the function deployment progress and invoke from here:
 
 https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/
 
-Select `mlrun` namespace from the left menu and then select your "quick start" project.
+Select `mlrun` namespace from the left menu and then select your "quick-start" project.
 
 You will see your serving function - `quick-start-v2-model-server`.
