@@ -1,0 +1,59 @@
+{
+    "title": "MLRun quick setup Guide",
+    "description": "Install MLRun open source framework.",
+    "difficulty": "Introduction",
+    "time": "20 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Kubernets Cluster",
+                "text": "kubernetes_cluster.md"
+            },
+            {
+                "title": "Install Container Registry",
+                "text": "container_registry.md"
+            },
+            {
+                "title": "Install Helm Charts",
+                "text": "helm_charts.md"
+            },
+            {
+                "title": "Test train & serve a model",
+                "text": "test_train_serve_model.md"
+            }
+        ],
+        "intro": {
+            "title": "Introduction",
+            "code": "launch.sh",
+            "text": "intro.md"
+        },
+        "finish": {
+            "title": "Finish",
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "showdashboards": true,
+        "dashboards": [
+            {
+                "name": "Jupter-Lab",
+                "port": 30040,
+                "href": "https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].environments.katacoda.com"
+            },
+            {
+                "name": "MLRun",
+                "port": 30050,
+                "href": "https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].environments.katacoda.com"
+            },
+            {
+                "name": "Nuclio",
+                "port": 30060,
+                "href": "https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].environments.katacoda.com"
+            }
+        ],
+        "uilayout": "terminal-iframe"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}

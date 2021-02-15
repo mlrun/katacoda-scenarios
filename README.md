@@ -1,6 +1,11 @@
-[![](http://shields.katacoda.com/katacoda/mlrun/count.svg)](https://www.katacoda.com/mlrun "MLRun interactive courses")
+# MLRun interactive scenarios
 
+[![MLRun](http://shields.katacoda.com/katacoda/mlrun/count.svg)](https://www.katacoda.com/mlrun "MLRun interactive courses")
+![CI](https://github.com/mlrun/katacoda-scenarios/workflows/CI/badge.svg)
 
-# MLRUN interactive scenarios
+Click [here](https://www.katacoda.com/mlrun) for _all_ MLRun interactive courses and scenarios for [Katacoda](https://www.katacoda.com)
 
-Click [here](https://www.katacoda.com/mlrun) for _all_ MLRun interactive courses and scenarios for Katacoda
+## Courses
+
+- [Quick Start](./quick-start/intro.md)
+- Distributed MLOps with MLRun and Kubeflow (TBD)
