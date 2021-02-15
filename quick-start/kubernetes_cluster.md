@@ -1,5 +1,3 @@
-# Kubernetes cluster
-
 To spin up your cluster, click on:
 
 `launch.sh`{{execute}}
@@ -14,6 +12,10 @@ Next thing, is running *kubectl*, the Kubernetes command-line tool, which is ava
 
 `helm version --short && helm env`{{execute}}
 
-_Kubernetes Dashboard_, which provide a convenient UI to administrate your cluster can be used, using the following token:
+Initialize Helm Chart Repositories
 
-`token.sh`{{execute}}
+`helm repo add stable https://charts.helm.sh/stable`{{execute}}
+
+`helm repo add v3io-stable https://v3io.github.io/helm-charts/stable`{{execute}}
+
+`helm repo update`{{execute}}
