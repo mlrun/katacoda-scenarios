@@ -1,6 +1,6 @@
 # Introduction
 
-![MLRun Logo](https://github.com/mlrun/mlrun/blob/development/docs/_static/images/MLRun-logo.png?raw=true =150x)
+<img src="./../assets/logo.png" width="250x">
 
 [MLRun](https://github.com/mlrun/mlrun) is an open-source MLOps framework that offers an integrative approach to managing your machine-learning pipelines from early development through model development to full pipeline deployment in production.
 
