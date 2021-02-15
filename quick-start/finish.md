@@ -1,5 +1,3 @@
-# The End
-
 MLRun provides the following key benefits:
 
 - Rapid deployment of code to production pipelines

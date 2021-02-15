@@ -24,6 +24,7 @@
         ],
         "intro": {
             "title": "Introduction",
+			"courseData": "background.sh",
             "text": "intro.md"
         },
         "finish": {
@@ -36,18 +37,15 @@
         "dashboards": [
             {
                 "name": "Jupter-Lab",
-                "port": 30040,
-                "href": "https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].environments.katacoda.com"
+                "port": 30040
             },
             {
                 "name": "MLRun",
-                "port": 30050,
-                "href": "https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].environments.katacoda.com"
+                "port": 30050
             },
             {
                 "name": "Nuclio",
-                "port": 30060,
-                "href": "https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].environments.katacoda.com"
+                "port": 30060
             }
         ],
         "uilayout": "terminal-iframe"
