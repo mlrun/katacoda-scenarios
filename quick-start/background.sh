@@ -16,4 +16,5 @@
 
 docker pull mlrun/mlrun-api:0.6.0 &
 docker pull mlrun/mlrun-ui:0.6.0 &
+docker pull mlrun/ml-models:0.6.0 &
 docker pull quay.io/mlrun/jupyter:0.6.0 &
