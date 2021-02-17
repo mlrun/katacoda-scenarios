@@ -1,6 +1,6 @@
 {
     "title": "MLRun Kit Quick-Start Guide",
-    "description": "Quick-start guide for MLRun Kit, the open-source MLOps orchestration framework.",
+    "description": "Quick-start guide for MLRun, the open-source MLOps orchestration framework",
     "difficulty": "Introduction",
     "time": "20 minutes",
     "details": {
@@ -27,15 +27,15 @@
                 "text": "helm_charts.md"
             },
             {
-                "title": "Train",
+                "title": "Train A Model",
                 "text": "train.md"
             },
             {
-                "title": "Test",
+                "title": "Test Your Model",
                 "text": "test.md"
             },
             {
-                "title": "Serve",
+                "title": "Serve Your Model",
                 "text": "serve.md"
             }
         ],
@@ -53,15 +53,15 @@
         "showdashboards": true,
         "dashboards": [
             {
-                "name": "Jupter-Lab",
+                "name": "Jupyter",
                 "port": 30040
             },
             {
-                "name": "MLRun",
+                "name": "Nuclio",
                 "port": 30050
             },
             {
-                "name": "Nuclio",
+                "name": "MLRun",
                 "port": 30060
             }
         ],

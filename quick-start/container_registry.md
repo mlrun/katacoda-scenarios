@@ -1,5 +1,5 @@
 [MLRun](https://github.com/mlrun/mlrun) requires an accessible docker-registry (such as Docker Hub).
-The registry’s URL and credentials are consumed by the applications via a pre-created Kubernetes secret.
+The registry’s URL and credentials are provided to the applications via a Kubernetes secret.
 
 In this tutorial, you will use a local Docker registry.
 
