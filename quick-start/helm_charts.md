@@ -12,7 +12,13 @@ First, start by creating the namespace for the deployed components,
 
 Install MLRun Kit chart:
 
-`python3 /usr/local/bin/mlrunkit_install.py --chart-version 0.1.1 --registry-url ${REGISTRY}`{{execute}}
+```shell
+python3 /usr/local/bin/mlrunkit_install.py \
+    --chart-version 0.1.1 \
+    --registry-url ${REGISTRY} \
+    --nuclio-ui-url https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]] \
+    --mlrun-ui-url https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
+```{{execute}}
 
 >**Note**: Installing MLRun Kit might take several minutes.
 
