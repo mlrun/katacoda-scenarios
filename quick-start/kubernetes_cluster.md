@@ -19,10 +19,10 @@ Run the below command to list the version and related environment variables:
 
 Initialize the `stable` and `v3io-stable` Helm Chart Repositories:
 
-`helm repo add stable https://charts.helm.sh/stable`{{execute}}
-
-`helm repo add v3io-stable https://v3io.github.io/helm-charts/stable`{{execute}}
-
-`helm repo update`{{execute}}
+```shell
+helm repo add stable https://charts.helm.sh/stable \
+  && helm repo add v3io-stable https://v3io.github.io/helm-charts/stable \
+  && helm repo update
+```{{execute}}
 
 We will be using those Helm Chart Repositories next, to install the MLRun chart.

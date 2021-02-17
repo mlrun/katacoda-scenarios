@@ -37,4 +37,4 @@ train_run = train.run(name='train',
 
 Open The MLRun UI and check the train job progress and its artifacts from there:
 
-https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/quick-start/jobs/monitor
+https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/quick-start/jobs/monitor

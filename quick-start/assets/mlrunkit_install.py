@@ -1,4 +1,4 @@
-# Copyright 2018 Iguazio
+# Copyright 2021 Iguazio
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,11 +23,31 @@ import subprocess
 def main():
     args = _parse_args()
     cmd = _resolve_install_command(args)
-    process = _popen(cmd)
-    output = _spin_and_wait_for_process(process)
+    process = _spin_while_waiting_for_process(_popen(cmd))
+    if process.returncode != 0:
+
+        # write stdout and stderr and bail
+        sys.stdout.write(process.communicate()[0].decode())
+        sys.stderr.write(process.communicate()[1].decode())
+        exit(process.returncode)
+
+    output = process.communicate()[0].decode()
     print(
         f"==============================\n\n{output}\n\n=============================="
     )
+
+
+def _parse_args():
+    parser = argparse.ArgumentParser(description="Install MLRun Kit interactively")
+
+    parser.add_argument("--chart-version", type=str, default="0.1.1")
+    parser.add_argument("--registry-url", type=str, default="localhost:5000")
+    parser.add_argument("--timeout", type=str, default="10m")
+    parser.add_argument("--namespace", type=str, default="mlrun")
+    parser.add_argument("--nuclio-ui-url", type=str, default="http://localhost:30050")
+    parser.add_argument("--mlrun-ui-url", type=str, default="http://localhost:30060")
+
+    return parser.parse_args()
 
 
 def _resolve_install_command(args):
@@ -36,28 +56,18 @@ def _resolve_install_command(args):
     --wait \
     --timeout {args.timeout} \
     --version {args.chart_version} \
+    --set mlrun.nuclio.uiURL={args.nuclio_ui_url} \
+    --set jupyterNotebook.mlrunUIURL={args.mlrun_ui_url} \
     --set global.registry.url={args.registry_url} \
     v3io-stable/mlrun-kit"
 
 
-def _parse_args():
-    parser = argparse.ArgumentParser(description="Install MLRun Kit interactively")
-
-    parser.add_argument("--chart-version", type=str, default="0.1.0")
-    parser.add_argument("--registry-url", type=str, default="localhost:5000")
-    parser.add_argument("--timeout", type=str, default="10m")
-    parser.add_argument("--namespace", type=str, default="mlrun")
-
-    return parser.parse_args()
-
-
-def _spin_and_wait_for_process(process):
+def _spin_while_waiting_for_process(process):
     spinner = _get_spinner()
     print("Executing...")
     while process.poll() is None:
         _print_spinner(spinner)
-    print("Execution finished")
-    return process.communicate()[0].decode()
+    return process
 
 
 def _print_spinner(spinner):

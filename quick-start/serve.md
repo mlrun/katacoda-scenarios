@@ -25,7 +25,7 @@ serve.invoke(f'v2/models/{model_name}/infer', my_data)
 
 Next, open the Nuclio UI - from there you can see the deployment output and configuration and invoke the function manually:
 
-https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/
+https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/
 
 Select the `mlrun` namespace from the left drop-down menu and then select your "quick-start" project.
 Now, click on your serving function - `v2-model-server` to see detailed information and configuration about the function.
