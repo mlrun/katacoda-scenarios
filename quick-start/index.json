@@ -27,16 +27,8 @@
                 "text": "helm_charts.md"
             },
             {
-                "title": "Train A Model",
-                "text": "train.md"
-            },
-            {
-                "title": "Test Your Model",
-                "text": "test.md"
-            },
-            {
-                "title": "Serve Your Model",
-                "text": "serve.md"
+                "title": "Quick-Start",
+                "text": "quick_start.md"
             }
         ],
         "intro": {
