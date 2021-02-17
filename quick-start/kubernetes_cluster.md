@@ -4,8 +4,8 @@ To spin up your cluster, click on:
 
 Wait a few seconds, to allow Katacoda to spin up your Kubernetes cluster.
 
-First, you will be using [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/), the Kubernetes 
-command-line tool, available through the terminal session.
+First, you will be using [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/), the Kubernetes
+ command-line tool, available through the terminal session.
 
 Run the below command now, to see some basic info about your newly created cluster:
 

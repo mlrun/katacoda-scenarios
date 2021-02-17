@@ -3,7 +3,7 @@ The registry’s URL and credentials are provided to the applications via a Kube
 
 In this tutorial, you will use a local Docker registry.
 
->**NOTE**: The unauthenticated local registry is used here for demo purposes only. In production environments, 
+>**NOTE**: The unauthenticated local registry is used here for demo purposes only. In production environments,
 > you should use an appropriate docker registry, with proper authentication and persistency.
 
 - Install a docker registry:

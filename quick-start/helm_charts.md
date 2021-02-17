@@ -18,8 +18,8 @@ Install MLRun Kit chart:
 
 Now, your MLRun Kit is up and running, and the various components are available.
 
-For easy access, click on each of the links below to make the appropriate terminal tab 
-on the top right screen operational:
+For easy access, click on each of the links below to make the appropriate terminal tab
+ on the top right screen operational:
 
 - [Jupyter](https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])
 
@@ -28,4 +28,3 @@ on the top right screen operational:
 - [MLRun](https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])
 
 Hop in mlrun/nuclio/jupyter and explore!
-
