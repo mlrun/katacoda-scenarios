@@ -1,6 +1,8 @@
-Now that you have a trained model, you can test it: run a task that uses the [test_classifier](https://github.com/mlrun/functions/tree/master/test_classifier) marketplace function to run the selected trained model against the test data set, as returned for the training task (train) in the previous step
+Now that you have a trained model, you can test it: run a task that uses
+the [test_classifier](https://github.com/mlrun/functions/tree/master/test_classifier) marketplace function to run
+the selected trained model against the test data set, as returned for the training task (train) in the previous step
 
-### Test
+### Test the model
 
 ```python
 

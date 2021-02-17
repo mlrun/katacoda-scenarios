@@ -1,13 +1,13 @@
 {
     "title": "MLRun Kit Quick-Start Guide",
-    "description": "Quick-start guide for MLRun Kit, the open-source MLOps orchestration framework.",
+    "description": "Quick-start guide for MLRun, the open-source MLOps orchestration framework",
     "difficulty": "Introduction",
     "time": "20 minutes",
     "details": {
         "assets": {
             "host01": [
                 {
-                    "file": "mlkit_install.py",
+                    "file": "mlrunkit_install.py",
                     "target": "/usr/local/bin/",
                     "chmod": "+x"
                 }
@@ -15,27 +15,27 @@
         },
         "steps": [
             {
-                "title": "Spin Kubernets Cluster",
+                "title": "Spin Up A Kubernetes Cluster",
                 "text": "kubernetes_cluster.md"
             },
             {
-                "title": "Install Container Registry",
+                "title": "Install A Container Registry",
                 "text": "container_registry.md"
             },
             {
-                "title": "Install Helm Charts",
+                "title": "Install MLRun Kit Helm Chart",
                 "text": "helm_charts.md"
             },
             {
-                "title": "Train",
+                "title": "Train A Model",
                 "text": "train.md"
             },
             {
-                "title": "Test",
+                "title": "Test Your Model",
                 "text": "test.md"
             },
             {
-                "title": "Serve",
+                "title": "Serve Your Model",
                 "text": "serve.md"
             }
         ],
@@ -53,15 +53,15 @@
         "showdashboards": true,
         "dashboards": [
             {
-                "name": "Jupter-Lab",
+                "name": "Jupyter",
                 "port": 30040
             },
             {
-                "name": "MLRun",
+                "name": "Nuclio",
                 "port": 30050
             },
             {
-                "name": "Nuclio",
+                "name": "MLRun",
                 "port": 30060
             }
         ],
