@@ -46,7 +46,7 @@ def _parse_args():
     parser.add_argument("--namespace", type=str, default="mlrun")
     parser.add_argument("--nuclio-ui-url", type=str, default="http://localhost:30050")
     parser.add_argument("--mlrun-ui-url", type=str, default="http://localhost:30060")
-
+    parser.add_argument("--jupyter-image-tag", type=str, default="0.6.0")
     return parser.parse_args()
 
 
@@ -59,6 +59,7 @@ def _resolve_install_command(args):
     --set mlrun.nuclio.uiURL={args.nuclio_ui_url} \
     --set jupyterNotebook.mlrunUIURL={args.mlrun_ui_url} \
     --set global.registry.url={args.registry_url} \
+    --set jupyterNotebook.image.tag={args.jupyter_image_tag} \
     v3io-stable/mlrun-kit"
 
 
