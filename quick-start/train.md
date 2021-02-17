@@ -1,4 +1,4 @@
-Now that we have everything up and running, it is time working with  MLRun Kit
+Now that we have everything up and running, it is time to kick the tires and start working with MLRun.
 
 Open up Jupyter, Select `File -> New -> Notebook`.
 
@@ -6,11 +6,11 @@ Open the created notebook, select kernel: `Python 3`
 
 On the bottom status bar, wait until `Python 3` kernel is _idle_.
 
-For each section you may want to copy, paste to your notebook and execute it.
+For each section copy & paste it to your notebook and execute it.
 
 ### Set environment
 
-Initialize MLRun by calling set_environment and provide it the project name
+Initialize an MLRun project by calling `set_environment` and providing the project name
 
 ```python
 from mlrun import set_environment
@@ -18,7 +18,7 @@ project_name = 'quick-start'
 _, artifact_path = set_environment(project=project_name)
 ```{{copy}}
 
-### Train
+### Train a model
 
 Use the [sklearn_classifer](https://github.com/mlrun/functions/tree/master/sklearn_classifier) from the function marketplace to train our model.
 
@@ -35,6 +35,6 @@ train_run = train.run(name='train',
                       project=project_name)
 ```{{copy}}
 
-Open MLRun UI and check the train job progress and its artifacts from here:
+Open The MLRun UI and check the train job progress and its artifacts from there:
 
 https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/quick-start/jobs/monitor

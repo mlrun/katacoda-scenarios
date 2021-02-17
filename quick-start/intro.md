@@ -1,8 +1,11 @@
-<img src="./../assets/logo.png" width="250x">
+<img src="./../assets/logo.png" width="250x" alt="mlrun">
 
-[MLRun](https://github.com/mlrun/mlrun) is an open-source MLOps framework that offers an integrative approach to managing your machine-learning pipelines from early development through model development to full pipeline deployment in production.
+[MLRun](https://www.iguazio.com/open-source/mlrun/) is an [open-source](https://github.com/mlrun/mlrun) MLOps framework 
+that offers an integrative approach to managing your machine-learning pipelines; from early development, through model development, 
+and to full pipeline deployment in production.
 
-MLRun offers a convenient abstraction layer to a wide variety of technology stacks while empowering data engineers and data scientists to define the feature and models.
+MLRun offers a convenient abstraction layer to a wide variety of technology stacks while empowering data engineers 
+and data scientists to define the feature and models.
 
 In the following course you will learn how to:
 

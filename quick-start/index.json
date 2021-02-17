@@ -7,7 +7,7 @@
         "assets": {
             "host01": [
                 {
-                    "file": "mlkit_install.py",
+                    "file": "mlrunkit_install.py",
                     "target": "/usr/local/bin/",
                     "chmod": "+x"
                 }
@@ -15,15 +15,15 @@
         },
         "steps": [
             {
-                "title": "Spin Kubernets Cluster",
+                "title": "Spin Up A Kubernetes Cluster",
                 "text": "kubernetes_cluster.md"
             },
             {
-                "title": "Install Container Registry",
+                "title": "Install A Container Registry",
                 "text": "container_registry.md"
             },
             {
-                "title": "Install Helm Charts",
+                "title": "Install MLRun Kit Helm Chart",
                 "text": "helm_charts.md"
             },
             {
