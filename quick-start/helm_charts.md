@@ -12,7 +12,7 @@ First, start by creating the namespace for the deployed components,
 
 Install MLRun Kit chart:
 
-`python3 /usr/local/bin/mlkit_install.py --chart-version 0.1.1 --registry-url ${REGISTRY}`{{execute}}
+`python3 /usr/local/bin/mlrunkit_install.py --chart-version 0.1.1 --registry-url ${REGISTRY}`{{execute}}
 
 >**Note**: Installing MLRun Kit might take several minutes.
 
