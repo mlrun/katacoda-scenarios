@@ -56,7 +56,7 @@ def _resolve_install_command(args):
     --wait \
     --timeout {args.timeout} \
     --version {args.chart_version} \
-    --set mlrun.nuclio.uiUR={args.nuclio_ui_url} \
+    --set mlrun.nuclio.uiURL={args.nuclio_ui_url} \
     --set jupyterNotebook.mlrunUIURL={args.mlrun_ui_url} \
     --set global.registry.url={args.registry_url} \
     v3io-stable/mlrun-kit"
