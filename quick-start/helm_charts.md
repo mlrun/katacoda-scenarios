@@ -10,7 +10,7 @@ First, start by creating the namespace for the deployed components,
 
 `kubectl create namespace mlrun`{{execute}}
 
-Install MLRun Kit chart:
+Next, Install MLRun Kit chart:
 
 ```shell
 python3 /usr/local/bin/mlrunkit_install.py \
@@ -34,4 +34,4 @@ For easy access, click on each of the links below to make the appropriate termin
 
 - [MLRun](https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])
 
-Hop in mlrun/nuclio/jupyter and explore!
+Hop in MLRun/Nuclio/Jupyter and explore!
