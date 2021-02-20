@@ -1,6 +1,6 @@
 Now that we have everything up and running, it is time to kick the tires and start working with MLRun.
 
-Open up Jupyter, Select `quick-start.ipynb` notebook, and follow each step as it will thoroughly guide you on how to 
+Open up Jupyter, Select `quick-start.ipynb` notebook, and follow each step as it will thoroughly guide you on how to
 Train, Test and Serve your ML Model.
 
 ### MLRun Dashboard
