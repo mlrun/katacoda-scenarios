@@ -1,7 +1,9 @@
 Now that we have everything up and running, it is time to kick the tires and start working with MLRun.
 
-Open up Jupyter, Select `quick-start.ipynb` notebook, and follow each step as it will thoroughly guide you on how to
-Train, Test and Serve your ML Model.
+### Jupyter Notebook
+
+Open up **[Jupyter UI](https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].[[KATACODA_DOMAIN]])**,
+Select `quick-start.ipynb` notebook, and follow each step as it will guide you on how to Train, Test and Serve your ML Model.
 
 ### MLRun Dashboard
 
@@ -18,5 +20,3 @@ to see the real-time functions' deployment outputs, configuration, and even to i
 > On the right side of the `code` tab you will see the test pane - where you can invoke your function with test inputs
 > and inspect the outputs. Feel free to explore the various tabs to learn about the different details of the function
 > while you're here.
-
-For more details about Nuclio, check out the [official Nuclio documentation](https://nuclio.io/docs/latest/introduction/)
