@@ -26,7 +26,6 @@ To learn more about Nuclio:
 - [Github](https://github.com/nuclio/nuclio#nuclio---serverless-for-real-time-events-and-data-processing)
 - [Community](https://nuclio.io/#!/community)
 - [Join Nuclio Slack](https://lit-oasis-83353.herokuapp.com/)
-- [Nuclio Katacoda Demo](https://www.katacoda.com/kuber-ru/courses/kubernetes-serverless/nuclio)
 
 Finally, don't forget to check out [Iguazio](https://www.iguazio.com/) to see what else we have
 in [store](https://www.iguazio.com/feature-store/) for you...
