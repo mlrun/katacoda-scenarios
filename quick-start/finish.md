@@ -14,17 +14,19 @@ We hope you've enjoyed this quick start tutorial.
 
 To learn more about MLRun:
 
-- [Github](https://github.com/mlrun/mlrun#general-concept-and-motivation)
 - [Docs](https://docs.mlrun.org/en/latest)
+- [Github](https://github.com/mlrun/mlrun#general-concept-and-motivation)
 - [Examples](https://docs.mlrun.org/en/latest/examples.html)
+- [Join MLOpsLive Slack](https://go.iguazio.com/mlopslive/joincommunity)
 
 To learn more about Nuclio:
 
 - [Official page](https://nuclio.io/)
-- [Github](https://github.com/nuclio/nuclio#nuclio---serverless-for-real-time-events-and-data-processing)
 - [Docs](https://nuclio.io/docs/latest/introduction/)
+- [Github](https://github.com/nuclio/nuclio#nuclio---serverless-for-real-time-events-and-data-processing)
 - [Community](https://nuclio.io/#!/community)
 - [Join Nuclio Slack](https://lit-oasis-83353.herokuapp.com/)
+- [Nuclio Katacoda Demo](https://www.katacoda.com/kuber-ru/courses/kubernetes-serverless/nuclio)
 
 Finally, don't forget to check out [Iguazio](https://www.iguazio.com/) to see what else we have
 in [store](https://www.iguazio.com/feature-store/) for you...
