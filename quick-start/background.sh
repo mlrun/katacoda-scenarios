@@ -16,9 +16,8 @@
 
 MLRUN_VERSION=0.6.0
 
-# TODO: remove once 0.6.1 is out
-docker pull quay.io/mlrun/jupyter:0.6.1-rc1
-# docker pull quay.io/mlrun/jupyter:${MLRUN_VERSION}
+# TODO: change to MLRUN_VERSION once 0.6.1 is out
+docker pull quay.io/mlrun/jupyter:0.6.1-rc2-jupy
 docker pull mlrun/mlrun-api:${MLRUN_VERSION}
 docker pull mlrun/mlrun-ui:${MLRUN_VERSION}
 docker pull mlrun/ml-models:${MLRUN_VERSION}
