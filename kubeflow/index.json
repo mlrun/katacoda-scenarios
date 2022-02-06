@@ -21,7 +21,16 @@
       "text": "finish.md"
     }
   },
-  "environment": {},
+    "environment": {
+        "showdashboards": true,
+        "dashboards": [
+            {
+                "name": "Jupyter",
+                "port": 8888
+            }
+        ],
+        "uilayout": "terminal-iframe"
+    },
   "backend": {
     "imageid": "kubernetes-kubeflow"
   }
