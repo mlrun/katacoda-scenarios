@@ -40,13 +40,13 @@ def main():
 def _parse_args():
     parser = argparse.ArgumentParser(description="Install MLRun Kit interactively")
 
-    parser.add_argument("--chart-version", type=str, default="0.1.1")
+    parser.add_argument("--chart-version", type=str, default="0.1.15")
     parser.add_argument("--registry-url", type=str, default="localhost:5000")
     parser.add_argument("--timeout", type=str, default="10m")
     parser.add_argument("--namespace", type=str, default="mlrun")
     parser.add_argument("--nuclio-ui-url", type=str, default="http://localhost:30050")
     parser.add_argument("--mlrun-ui-url", type=str, default="http://localhost:30060")
-    parser.add_argument("--jupyter-image-tag", type=str, default="0.6.0")
+    parser.add_argument("--jupyter-image-tag", type=str, default="0.9.3")
     return parser.parse_args()
 
 
