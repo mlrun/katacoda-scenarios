@@ -56,6 +56,8 @@ def _resolve_install_command(args):
     --wait \
     --timeout {args.timeout} \
     --version {args.chart_version} \
+    --set nuclio.controller.image.tag=1.7.4-amd64 \
+    --set nuclio.dashboard.image.tag=1.7.4-amd64 \
     --set mlrun.nuclio.uiURL={args.nuclio_ui_url} \
     --set jupyterNotebook.mlrunUIURL={args.mlrun_ui_url} \
     --set global.registry.url={args.registry_url} \

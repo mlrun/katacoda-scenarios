@@ -8,7 +8,7 @@
             "host01": [
                 {
                     "file": "mlrunkit_install.py",
-                    "target": "/usr/local/bin/",
+                    "target": "/bin/",
                     "chmod": "+x"
                 }
             ]
