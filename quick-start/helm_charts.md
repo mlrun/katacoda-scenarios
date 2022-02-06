@@ -16,7 +16,7 @@ Next, Install MLRun Kit chart:
 python3 /bin/mlrunkit_install.py \
     --registry-url ${REGISTRY} \
     --nuclio-ui-url https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]] \
-    --mlrun-ui-url https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]] \
+    --mlrun-ui-url https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]
 ```{{execute}}
 
 >**Note**: Installing MLRun Kit might take several minutes.

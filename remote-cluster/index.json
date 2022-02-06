@@ -6,15 +6,15 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Start Jupyter and Connect To MLRun Service",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Run the Quick Start",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Run the Full Tutorial",
         "text": "step3.md"
       }
     ],

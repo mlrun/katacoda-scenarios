@@ -8,7 +8,7 @@ In this tutorial, you will use a local Docker registry.
 
 - Install a docker registry:
 
-`docker run --detach --publish 30100:5000 registry:2`{{execute}}
+`docker run --detach --publish 30100:5000 registry:2.7.1`{{execute}}
 
 - Export the registry URL as an environment variable:
 
