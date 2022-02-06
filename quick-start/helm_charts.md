@@ -14,11 +14,9 @@ Next, Install MLRun Kit chart:
 
 ```shell
 python3 /usr/local/bin/mlrunkit_install.py \
-    --chart-version 0.1.1 \
     --registry-url ${REGISTRY} \
     --nuclio-ui-url https://[[HOST_SUBDOMAIN]]-30050-[[KATACODA_HOST]].[[KATACODA_DOMAIN]] \
     --mlrun-ui-url https://[[HOST_SUBDOMAIN]]-30060-[[KATACODA_HOST]].[[KATACODA_DOMAIN]] \
-    --jupyter-image-tag 0.6.1-rc2-jupy
 ```{{execute}}
 
 >**Note**: Installing MLRun Kit might take several minutes.
