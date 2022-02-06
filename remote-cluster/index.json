@@ -1,6 +1,6 @@
 {
   "title": "Use Remote MLRun Cluster",
-  "description": "tbd",
+  "description": "Learn how to use Jupyter with remote MLRun cluster (managed by Iguazio) to develop ML products",
   "difficulty": "Intermediate",
   "time": "10",
   "details": {

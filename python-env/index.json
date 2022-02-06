@@ -1,0 +1,46 @@
+{
+  "title": "Use MLRun in Python Environment ",
+  "description": "Develop Python code in standard IDE and use MLRun to run it at scale",
+  "difficulty": "Intermediate",
+  "time": "10",
+  "details": {
+        "assets": {
+            "host01": [
+                {
+                    "file": "mlrun.env",
+                    "target": "/root/"
+                }
+            ]
+        },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "python:3.8"
+  }
+}
