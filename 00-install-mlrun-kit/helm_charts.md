@@ -6,10 +6,6 @@ On this step, you will install the MLRun Kit Helm chart, which includes the foll
 - [NFS Provisioner](https://github.com/kubernetes-retired/external-storage/tree/master/nfs)
 - [MPI Operator](https://github.com/kubeflow/mpi-operator)
 
-First, start by creating the namespace for the deployed components,
-
-`kubectl create namespace mlrun`{{execute}}
-
 Next, Install MLRun Kit chart:
 
 ```shell

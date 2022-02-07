@@ -1,7 +1,23 @@
 [MLRun](https://github.com/mlrun/mlrun) requires an accessible docker-registry (such as Docker Hub).
 The registry’s URL and credentials are provided to the applications via a Kubernetes secret.
 
-In this tutorial, you will use a local Docker registry.
+To configure a remote container registry use the command below and edit with your information:
+
+```{{copy}}
+kubectl --namespace mlrun create secret docker-registry registry-credentials \
+    --docker-username <registry-username> \
+    --docker-password <login-password> \
+    --docker-server <server URL, e.g. https://index.docker.io/v1/ > \
+    --docker-email <user-email>
+```
+
+set the container registry URL, copy and run the following command with your own details
+
+```{{copy}}
+export REGISTRY=<registry URL e.g. index.docker.io/mlrun >
+```
+
+Alternatively you can use a local Docker registry (not recommended).
 
 >**NOTE**: The unauthenticated local registry is used here for demo purposes only. In production environments,
 > you should use an appropriate docker registry, with proper authentication and persistency.

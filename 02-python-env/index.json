@@ -12,7 +12,7 @@
         },
     "steps": [
       {
-        "title": "MLRun Installation",
+        "title": "Install MLRun",
         "text": "step1.md"
       },
       {
@@ -43,6 +43,6 @@
     "uieditorpath": "/root/editor"
   },
   "backend": {
-    "imageid": "python:3.8"
+    "imageid": "ubuntu:2004"
   }
 }
