@@ -4,14 +4,14 @@
   "difficulty": "Intermediate",
   "time": "15",
   "details": {
-        "assets": {
-            "host01": [
-                {"file": "local.env", "target": "/root/editor/"},
-                {"file": "remote.env", "target": "/root/editor/"},
-                {"file": "handler.py", "target": "/root/editor/"},
-                {"file": "gen_iris.py", "target": "/root/editor/"}
-            ]
-        },
+    "assets": {
+        "client": [
+            {"file": "local.env", "target": "/root/editor/"},
+            {"file": "remote.env", "target": "/root/editor/"},
+            {"file": "handler.py", "target": "/root/editor/"},
+            {"file": "gen_iris.py", "target": "/root/editor/"}
+        ]
+    },
     "steps": [
       {
         "title": "Install MLRun",
