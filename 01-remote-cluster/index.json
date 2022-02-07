@@ -1,6 +1,6 @@
 {
-  "title": "Develop Models in Jupyter using Remote MLRun Cluster",
-  "description": "Learn how to use Jupyter with remote MLRun cluster (managed by Iguazio) to develop end to end ML products",
+  "title": "Rapidly Develop and Deploy Models in Jupyter using Managed MLRun Service (By Iguazio)",
+  "description": "Learn how to process data, build ML/DL models, deploy and monitor production ML pipelines at scale using Jupyter connected to Iguazio's remote MLRun service",
   "difficulty": "Intermediate",
   "time": "15",
   "details": {

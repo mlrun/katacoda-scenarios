@@ -1,6 +1,6 @@
 {
-  "title": "Use MLRun in Local Python Environment ",
-  "description": "Develop ML code in Python using standard IDE, track it and run it at scale using MLRun",
+  "title": "Develop and Deploy Models with MLRun and Local Python Environment/IDE",
+  "description": "Develop and track ML models using standard Python IDE, easily move to production at scale using Iguazio's managed MLRun service",
   "difficulty": "Intermediate",
   "time": "15",
   "details": {
