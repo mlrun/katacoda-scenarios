@@ -16,8 +16,6 @@ In the following course you will learn how to:
 - Setup a local developer environment with MLRun
 - Create and run various ML functions using an IDE
 - Build workflows, Track artifacts and results
-- Connect to remote clusters and:
-  - Automatically deploy code and pipelines to production
-  - Run jobs at scale over MLRun serverless engines
+- Connect to remote clusters and rapidly deploy code and pipelines to production at scale
 
 More information about MLRun and its architecture can be found [here](https://docs.mlrun.org/en/latest).
