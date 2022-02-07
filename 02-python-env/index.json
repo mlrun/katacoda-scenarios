@@ -1,6 +1,6 @@
 {
-  "title": "Develop and Deploy Models with MLRun and Local Python Environment/IDE",
-  "description": "Develop and track ML models using standard Python IDE, easily move to production at scale using Iguazio's managed MLRun service",
+  "title": "Develop & Deploy ML Pipelines with MLRun and Local Python Environment/IDE",
+  "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with Iguazio's managed MLRun service",
   "difficulty": "Intermediate",
   "time": "15",
   "details": {
