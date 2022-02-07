@@ -1,8 +1,8 @@
 {
-  "title": "Use MLRun in Python Environment ",
-  "description": "Develop Python code in standard IDE and use MLRun to run it at scale",
+  "title": "Use MLRun in Local Python Environment ",
+  "description": "Develop ML code in Python using standard IDE, track it and run it at scale using MLRun",
   "difficulty": "Intermediate",
-  "time": "10",
+  "time": "15",
   "details": {
         "assets": {
             "host01": [
@@ -12,23 +12,24 @@
         },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "MLRun Installation",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Execute a Local Function with MLRun CLI",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Execute Functions and Workflows Using the SDK",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Run Functions on Remote Clusters",
         "text": "step4.md"
       }
     ],
     "intro": {
+      "title": "Introduction",
       "text": "intro.md",
       "courseData": "background.sh",
       "code": "foreground.sh"
