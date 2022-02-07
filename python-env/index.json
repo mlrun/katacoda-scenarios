@@ -6,10 +6,8 @@
   "details": {
         "assets": {
             "host01": [
-                {
-                    "file": "mlrun.env",
-                    "target": "/root/"
-                }
+                {"file": "mlrun.env", "target": "/root/editor/"},
+                {"file": "handler.py", "target": "/root/editor/"}
             ]
         },
     "steps": [
@@ -31,14 +29,16 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "background.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/editor"
   },
   "backend": {
     "imageid": "python:3.8"
