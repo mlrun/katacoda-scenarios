@@ -1,6 +1,8 @@
-Installing MLRun package (with the API service) using the following command:
+Installing MLRun package (with the API service) and sklearn (using the following command):
 
-`pip install mlrun[api]`
+`pip install mlrun[api] sklearn`
+
+Please wait untill the install is completed !
 
 set mlrun environment vars (in `local.env`{{open}}):
 
@@ -15,7 +17,7 @@ run MLRun DB/API service in the background:
 MLRun Project is a container for all your work on a particular activity/application. All the associated code, functions, 
 jobs/workflows and artifacts are organized within the projects.
 
-We can create a `project.yaml` file manually, or using the SDK, for example to 
+We can create a `project.yaml`{{open}} file manually, or using the SDK, for example to 
 create a project and register a function in it use:
 
 ```python
@@ -24,6 +26,3 @@ project.set_function("gen_iris.py", "gen-iris",
                      image="mlrun/mlrun", handler="iris_generator")
 project.save()
 ```
-
-See the `project.yaml`{{open}} file
-
