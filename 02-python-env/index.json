@@ -6,6 +6,7 @@
   "details": {
     "assets": {
         "client": [
+            {"file": "project.yaml", "target": "/root/editor/"},
             {"file": "local.env", "target": "/root/editor/"},
             {"file": "remote.env", "target": "/root/editor/"},
             {"file": "handler.py", "target": "/root/editor/"},

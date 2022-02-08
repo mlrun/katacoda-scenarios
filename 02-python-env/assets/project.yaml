@@ -1,0 +1,9 @@
+kind: project
+metadata:
+  name: katacoda
+spec:
+  functions:
+  - url: gen_iris.py
+    name: gen-iris
+    image: mlrun/mlrun
+    handler: iris_generator
