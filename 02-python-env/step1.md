@@ -2,7 +2,7 @@ Installing MLRun package (with the API service) using the following command:
 
 `pip install mlrun[api]`
 
-set mlrun environment vars (from `/root/editor/local.env`{{open}}):
+set mlrun environment vars (in `local.env`{{open}}):
 
 `export MLRUN_ENV_FILE=/root/editor/local.env`{{execute}}
 
@@ -20,11 +20,10 @@ create a project and register a function in it use:
 
 ```python
 project = mlrun.new_project("katacoda", "./")
-project.set_function(
-    "gen_iris.py", "gen-iris", image="mlrun/mlrun", handler="iris_generator",
-)
+project.set_function("gen_iris.py", "gen-iris", 
+                     image="mlrun/mlrun", handler="iris_generator")
 project.save()
 ```
 
-See the `/root/editor/project.yaml`{{open}} file
+See the `project.yaml`{{open}} file
 
