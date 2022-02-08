@@ -14,10 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-MLRUN_VERSION=0.6.0
+MLRUN_VERSION=0.9.3
 
-# TODO: change to MLRUN_VERSION once 0.6.1 is out
-docker pull quay.io/mlrun/jupyter:0.6.1-rc2-jupy
+docker pull quay.io/mlrun/jupyter:${MLRUN_VERSION}
 docker pull mlrun/mlrun-api:${MLRUN_VERSION}
 docker pull mlrun/mlrun-ui:${MLRUN_VERSION}
-docker pull mlrun/ml-models:${MLRUN_VERSION}
+docker pull mlrun/mlrun:${MLRUN_VERSION}
