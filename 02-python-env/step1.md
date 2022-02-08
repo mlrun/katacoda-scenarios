@@ -4,13 +4,9 @@ Installing MLRun package (with the API service) and sklearn (using the following
 
 Please wait untill the install is completed !
 
-set mlrun environment vars (in `local.env`{{open}}):
+set mlrun environment vars with basic local configuraion (see `local.env`{{open}}):
 
 `export MLRUN_ENV_FILE=/root/editor/local.env`{{execute}}
-
-run MLRun DB/API service in the background:
-
-`mlrun db &&`{{execute}}
 
 **Define an MLRun project:**
 
@@ -24,5 +20,5 @@ create a project and register a function in it use:
 project = mlrun.new_project("katacoda", "./")
 project.set_function("gen_iris.py", "gen-iris", 
                      image="mlrun/mlrun", handler="iris_generator")
-project.save()
+project.export()
 ```
