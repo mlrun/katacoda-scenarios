@@ -5,7 +5,7 @@
 ```shell
 docker run -it -p 8080:8080 -p 8888:8888 --rm -d --name jupyter \
     -e MLRUN_ARTIFACT_PATH=v3io:///projects/{{run.project}}/artifacts \
-    mlrun/jupyter:unstable
+    mlrun/jupyter:0.10.0-rc7
 ```{{execute}}
 
 Once the container is up open the [Jupyter UI](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]) tab

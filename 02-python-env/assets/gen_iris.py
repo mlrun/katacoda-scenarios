@@ -1,4 +1,5 @@
 import pandas as pd
+import mlrun
 from sklearn.datasets import load_iris
 
 
@@ -11,3 +12,8 @@ def iris_generator(context, format="csv"):
 
     context.logger.info("saving iris dataframe to {}".format(context.artifact_path))
     context.log_dataset("iris_dataset", df=iris_dataset, format=format, index=False)
+
+
+if __name__ == "__main__":
+    with mlrun.get_or_create_ctx("iris_generator") as context:
+        iris_generator(context, context.get_param("format", "csv"))

@@ -3,7 +3,12 @@ metadata:
   name: katacoda
 spec:
   functions:
+  # main function example
   - url: gen_iris.py
     name: gen-iris
-    image: mlrun/mlrun
-    handler: iris_generator
+    kind: local
+  # function handler + auto_log example
+  - url: trainer.py
+    name: trainer
+    kind: local
+    handler: train

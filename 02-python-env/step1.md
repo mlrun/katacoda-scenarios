@@ -1,24 +1,18 @@
 Installing MLRun package (with the API service) and sklearn (using the following command):
 
-`pip install mlrun[api] sklearn`
+`pip install mlrun[api] sklearn plotly`
 
-Please wait untill the install is completed !
+Please wait until the install is completed, this may take a few minutes !
+
+MLRun support running and tracking functions locally (with partial capabilities), 
+over remote Kubernetes, or over Iguazio's managed MLOps service. 
+
+We will start with creating a project, running and tracking jobs locally.  
 
 set mlrun environment vars with basic local configuraion (see `local.env`{{open}}):
 
 `export MLRUN_ENV_FILE=/root/editor/local.env`{{execute}}
 
-**Define an MLRun project:**
+to start MLRun DB/API service locally type:
 
-MLRun Project is a container for all your work on a particular activity/application. All the associated code, functions, 
-jobs/workflows and artifacts are organized within the projects.
-
-We can create a `project.yaml`{{open}} file manually, or using the SDK, for example to 
-create a project and register a function in it use:
-
-```python
-project = mlrun.new_project("katacoda", "./")
-project.set_function("gen_iris.py", "gen-iris", 
-                     image="mlrun/mlrun", handler="iris_generator")
-project.export()
-```
+`mlrun db`{{execute}}
