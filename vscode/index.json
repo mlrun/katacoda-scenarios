@@ -14,12 +14,12 @@
       "text": "intro.md"
     },
     "finish": {
-      "text": "finish.md",
-      "uilayout": "vscode-terminal-split"
+      "text": "finish.md"
     }
   },
   "environment": {
-      "showide": true
+      "showide": true,
+      "uilayout": "vscode-terminal-split"
   },
   "backend": {
     "imageid": "ubuntu:2004"
