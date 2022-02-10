@@ -11,7 +11,7 @@ def iris_generator(context, format="csv"):
     iris_dataset = pd.concat([iris_dataset, iris_labels], axis=1)
 
     context.logger.info("saving iris dataframe to {}".format(context.artifact_path))
-    context.log_dataset("iris_dataset", df=iris_dataset, format=format, index=False)
+    context.log_dataset("dataset", df=iris_dataset, format=format, index=False)
 
 
 if __name__ == "__main__":

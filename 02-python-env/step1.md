@@ -11,7 +11,9 @@ We will start with creating a project, running and tracking jobs locally.
 
 to start MLRun DB/API service locally type:
 
-`mlrun db &&`{{execute}}
+`mlrun db &`{{execute}}
+
+>  can run it in the 2nd terminal to save the clutter
 
 set mlrun environment vars with basic local configuraion (see `local.env`{{open}}):
 
