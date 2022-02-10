@@ -15,15 +15,15 @@
     },
     "steps": [
       {
-        "title": "Install MLRun",
+        "title": "Install MLRun Locally",
         "text": "step1.md"
       },
       {
-        "title": "Execute a Local Function with MLRun CLI",
+        "title": "Define a Project and Execute a Function with MLRun CLI",
         "text": "step2.md"
       },
       {
-        "title": "Execute Functions and Workflows Using the SDK",
+        "title": "Execute Multiple Functions in a Workflows",
         "text": "step3.md"
       },
       {

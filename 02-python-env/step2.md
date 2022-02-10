@@ -1,25 +1,30 @@
+MLRun Project is a container for all your work on a particular activity/application. Projects hosts `functions`, `workflow`, 
+`artifacts`, `secrets`, and more. Projects have access control and can be accessed by one or more people.
 
-**Define an MLRun project:**
-
-MLRun Project is a container for all your work on a particular activity/application. All the associated code, functions, 
-jobs/workflows and artifacts are organized within the projects.
-
-We can create a `project.yaml`{{open}} file manually, or using the SDK, for example to 
-create a project and register a function in it use:
+We will start with a simple project which contains two local function definitions,
+You can create a `project.yaml`{{open}} file manually, or use the SDK, for example to 
+create a project and register the two function in it use:
 
 ```python
 project = mlrun.new_project("katacoda", "./")
-project.set_function("gen_iris.py", "gen-iris", 
-                     image="mlrun/mlrun", handler="iris_generator")
+project.set_function("gen_iris.py", "gen-iris", kind="local")
+project.set_function("trainer.py", "gen-iris", handler="train", kind="local")
 project.export()
 ```
 
-Run the data generation function () from the project:
+The MLRun `function` objects define the source code, extra packages, runtime configuration and desired 
+resources (cpu, gpu, mem, storage, ..), for now we will run basic `local` functions.  
+
+Run the data generation project function `gen-iris` (see the code in `gen_iris.py`{{open}}):
 
 `mlrun run -f gen-iris`{{execute}}
 
-Check out the autput artifacts under `artifacts/katacoda`{{open}}
+Check out the output artifacts under `artifacts/katacoda`{{open}}
 
 Run again, this time pass `format=parquet` as arg to the function:
 
-`mlrun run -f gen-iris -x format=parquet --dump`{{execute}}
+`mlrun run -f gen-iris -p format=parquet`{{execute}}
+
+You can see that the dataset is now created in `parquet` format
+
+> The `-p` flag is used to specify parameters, see `mlrun run --help` for more command options
