@@ -20,7 +20,7 @@ Run the data generation project function `gen-iris` (see `gen_iris.py`{{open}}):
 
 `mlrun run -f gen-iris`{{execute}}
 
-Check out the output CSV file in `artifacts/katacoda/iris_dataset.csv`{{open}}
+Check out the output CSV file in `artifacts/katacoda/dataset.csv`{{open}}
 
 Run again, this time pass `format=parquet` as arg to the function:
 
