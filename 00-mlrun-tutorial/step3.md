@@ -30,7 +30,7 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 
 Or in the UI:
 
-![MlRun UI](../assets/mlrun-ui.png)
+![MlRun UI](https://docs.mlrun.org/en/latest/_static/images/mlrun-quick-start/train-artifacts.png)
 
 
 > Note: UI is usually runs on the k8s service, it can also be installed as local docker image

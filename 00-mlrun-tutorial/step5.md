@@ -22,7 +22,7 @@ We can the pipeline from the CLI (or the SDK):
 
 Visual Pipeline Run (in MLRun UI):
 
-![Pipeline UI](../assets/monitor-workflow.png)
+![Pipeline UI](https://docs.mlrun.org/en/latest/_static/images/tutorial/job_pipeline.png)
 
 > MLRun support Real-Time Pipelines for data processing, APIs, and serving, see: 
 > [MLRun Real-time Serving Pipelines](https://docs.mlrun.org/en/latest/serving/serving-graph.html) docs.
