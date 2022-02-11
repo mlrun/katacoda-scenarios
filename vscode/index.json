@@ -1,9 +1,19 @@
 {
-  "title": "vscode",
-  "description": "x",
+  "title": "vscode - under construction",
+  "description": "TBD",
   "difficulty": "Beginner",
   "time": "5",
   "details": {
+    "assets": {
+        "client": [
+            {"file": "project.yaml", "target": "/root/editor/"},
+            {"file": "local.env", "target": "/root/editor/"},
+            {"file": "remote.env", "target": "/root/editor/"},
+            {"file": "trainer.py", "target": "/root/editor/"},
+            {"file": "gen_iris.py", "target": "/root/editor/"},
+            {"file": "examples.py", "target": "/root/editor/"}
+        ]
+    },
     "steps": [
       {
         "title": "Step 1",
@@ -11,6 +21,8 @@
       }
     ],
     "intro": {
+      "title": "Introduction",
+      "code": "foreground.sh",
       "text": "intro.md"
     },
     "finish": {
@@ -19,7 +31,8 @@
   },
   "environment": {
       "showide": true,
-      "uilayout": "vscode-terminal-split"
+      "uilayout": "vscode-terminal-split",
+      "uieditorpath": "/root/editor"
   },
   "backend": {
     "imageid": "ubuntu:2004"

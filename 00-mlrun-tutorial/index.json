@@ -24,12 +24,20 @@
         "text": "step2.md"
       },
       {
-        "title": "Using the SDK to Run Functions and Workflows",
+        "title": "Inject Params and Log Outputs",
         "text": "step3.md"
       },
       {
-        "title": "Run Functions on Remote Clusters",
+        "title": "Using the Functions SDK and Auto-Logging",
         "text": "step4.md"
+      },
+      {
+        "title": "Workflows and ML Pipeline Automation",
+        "text": "step5.md"
+      },
+      {
+        "title": "Running Jobs, Real-Time Functions and Pipelines over Remote Clusters",
+        "text": "step6.md"
       }
     ],
     "intro": {
@@ -39,6 +47,7 @@
       "code": "foreground.sh"
     },
     "finish": {
+      "title": "Additional Reading and Links",
       "text": "finish.md"
     }
   },
