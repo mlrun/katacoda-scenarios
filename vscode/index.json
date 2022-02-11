@@ -16,8 +16,20 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Install MLRun Locally",
         "text": "step1.md"
+      },
+      {
+        "title": "Define a Project and Execute a Function with MLRun CLI",
+        "text": "step2.md"
+      },
+      {
+        "title": "Inject Params and Log Outputs",
+        "text": "step3.md"
+      },
+      {
+        "title": "Using the Functions SDK and Auto-Logging",
+        "text": "step4.md"
       }
     ],
     "intro": {
