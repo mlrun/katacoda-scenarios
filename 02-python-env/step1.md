@@ -1,4 +1,4 @@
-Installing MLRun package (with the API service) and sklearn (using the following command):
+Installing MLRun package (with the API service) and sklearn using the following command:
 
 `pip install mlrun[api] sklearn plotly`
 
@@ -13,11 +13,10 @@ to start MLRun DB/API service locally type:
 
 `mlrun db &`{{execute}}
 
->  can run it in the 2nd terminal to save the clutter
+>  it is recommended to run the API in the 2nd terminal to save the clutter (click the "+" to open a new terminal)
 
-set mlrun environment vars with basic local configuraion (see `local.env`{{open}}):
+Go back to the first terminal and set mlrun environment with basic local configuration (see `local.env`{{open}}):
 
 `export MLRUN_ENV_FILE=/root/editor/local.env`{{execute}}
 
-> Note: in local environment we cannot build and run containers, 
-> we will connect to a remote Kubernetes environment in the 2nd part of this scenario.
+> Note: in local runtime environment we cannot build and run containers.

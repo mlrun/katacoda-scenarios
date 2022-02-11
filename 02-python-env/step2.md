@@ -1,5 +1,6 @@
-MLRun Project is a container for all your work on a particular activity/application. Projects hosts `functions`, `workflow`, 
-`artifacts`, `secrets`, and more. Projects have access control and can be accessed by one or more people.
+[MLRun **Project**](https://docs.mlrun.org/en/latest/projects/overview.html) is a container for all your work on a particular activity/application. Projects hosts `functions`, `workflow`, 
+`artifacts`, `secrets`, and more. Projects have access control and can be accessed by one or more people, they are usually assosiated with a GIT repo.
+See MLRun [Projects documentation](https://docs.mlrun.org/en/latest/projects/overview.html).
 
 We will start with a simple project which contains two local function definitions,
 You can create a `project.yaml`{{open}} file manually, or use the SDK, for example to 
@@ -13,8 +14,8 @@ project.set_function("trainer.py", "gen-iris",
 project.export()
 ```
 
-The MLRun `function` objects define the source code, extra packages, runtime configuration and desired 
-resources (cpu, gpu, mem, storage, ..), for now we will run basic `local` functions.  
+The [MLRun **Function**](https://docs.mlrun.org/en/latest/runtimes/functions.html) objects define the source code, 
+extra packages, runtime configuration and desired resources (cpu, gpu, mem, storage, ..), for now we will run basic `local` functions.  
 
 Run the data generation project function `gen-iris` (see `gen_iris.py`{{open}}):
 
@@ -29,3 +30,10 @@ Run again, this time pass `format=parquet` as arg to the function:
 You can see that the dataset is now created in `parquet` format
 
 > The `-p` flag is used to specify parameters, see `mlrun run --help` for more command options
+
+We can run the function using the regular `Python` command, notice the use of MLRun `with mlrun.get_or_create_ctx()` in the code, 
+it wraps your code allowing to automatically track the execution, try the following command:
+
+`python gen_iris.py`{{execute}}
+
+Using `python` however, doesnt allow data and parameter or hyper parameter injection. 
