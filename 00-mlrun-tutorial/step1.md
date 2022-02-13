@@ -4,8 +4,8 @@ Installing MLRun package (with the API service) and sklearn using the following 
 
 Please wait until the install is completed, this may take a few minutes !
 
-MLRun support running and tracking functions locally (with partial capabilities), 
-over remote Kubernetes (See MLRun-kit install over k8s scenario), or over [Iguazio's](https://www.iguazio.com/) managed MLOps service. 
+MLRun support running and tracking functions **locally** (with partial capabilities), 
+over **remote Kubernetes** (See MLRun-kit install over k8s scenario), or over [**Iguazio's**](https://www.iguazio.com/) managed MLOps service. 
 
 We will start with creating a project, running and tracking jobs locally.  
 

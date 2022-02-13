@@ -1,11 +1,11 @@
 The parameters used for the functions are tracked and can be manipulated via the SDK/CLI.
 Run the function again, this time pass `format=parquet` as arg to the function:
 
-`mlrun run -f gen-iris -p format=parquet`{{execute}}
+`mlrun run -f gen-iris -p format=parquet --local`{{execute}}
 
 You can see that the dataset is now created in `parquet` format
 
-> The `-p` flag is used to specify parameters, see `mlrun run --help` for more command options
+> The `-p` flag is used to specify parameters, `--local` indicate we run locally (not over the cluster), see `mlrun run --help` for more command options
 
 functions can specify a `context` input or get it using `get_or_create_ctx()`,
 the context allow us to read task metadata (name, uid, ..), parameters, secrets, etc.
@@ -28,9 +28,9 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 
 `mlrun get run -p katacoda`{{execute}}
 
-Or in the UI:
+MLRun has a rich UI for tracking runs and artifacts:
 
 ![MlRun UI](https://docs.mlrun.org/en/latest/_static/images/mlrun-quick-start/train-artifacts.png)
 
 
-> Note: UI is usually runs on the k8s service, it can also be installed as local docker image
+> Note: The UI is is installed on the k8s cluster or the managed MLRun service, it can also be installed as local docker image

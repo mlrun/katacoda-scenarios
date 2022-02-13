@@ -18,9 +18,9 @@ The [MLRun **Function**](https://docs.mlrun.org/en/latest/runtimes/functions.htm
 extra packages, runtime configuration and desired resources (cpu, gpu, mem, storage, ..), functions can also be loaded
 from the [MLRun Marketplace](https://www.mlrun.org/marketplace/functions/) for now we will use basic functions.  
 
-Run the data generation project function `gen-iris` (see `gen_iris.py`{{open}}):
+Run the data generation project function `gen-iris` (see `gen_iris.py`{{open}}) locally:
 
-`mlrun run -f gen-iris`{{execute}}
+`mlrun run -f gen-iris --local`{{execute}}
 
 Check out the output CSV file in `artifacts/katacoda/dataset.csv`{{open}}
 

@@ -9,13 +9,13 @@ In the following example we run a 3 stage workflow:
 
 > We run the serving function in simulation mode (mock) for now, since we are not connected to a real cluster
 
-check the `simple_pipe` code in the editor, and run the following:
+Read `simple_pipe()` code in `examples.py`{{open}}, and run the following:
 
 `python -c 'import examples; examples.simple_pipe()'`{{execute}}
 
-We can the pipeline from the CLI (or the SDK):
+We can run pipelines directly from the CLI (or the SDK):
 
-`mlrun project -r examples.py -w --handler simple_pipe --engine local .`{{execute}}
+`mlrun project -r examples.py -w --handler simple_pipe --local .`{{execute}}
 
 > When we run a pipeline MLRun adds extra reporting, visualization, and notifications (e.g. to Slack, Git)
 > Pipelines can run locally, over Kubeflow, or inside a CI/CD system (Github Actions, GitLab CI, Jenkins). 
@@ -24,5 +24,5 @@ Visual Pipeline Run (in MLRun UI):
 
 ![Pipeline UI](https://docs.mlrun.org/en/latest/_static/images/tutorial/job_pipeline.png)
 
-> MLRun support Real-Time Pipelines for data processing, APIs, and serving, see: 
+> In addition to batch pipelines, MLRun support Real-Time Pipelines for data processing, APIs, and serving, see: 
 > [MLRun Real-time Serving Pipelines](https://docs.mlrun.org/en/latest/serving/serving-graph.html) docs.

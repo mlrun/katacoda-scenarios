@@ -6,9 +6,9 @@ spec:
   # main function example
   - url: gen_iris.py
     name: gen-iris
-    kind: local
+    image: mlrun/mlrun
   # function handler + auto_log example
   - url: trainer.py
     name: trainer
     kind: local
-    handler: train
+    image: mlrun/mlrun
