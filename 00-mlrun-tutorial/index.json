@@ -17,27 +17,39 @@
     "steps": [
       {
         "title": "Install MLRun Locally",
-        "text": "step1.md"
+        "text": "install.md"
       },
       {
-        "title": "Define a Project and Execute a Function with MLRun CLI",
-        "text": "step2.md"
+        "title": "Define Projects and Functions",
+        "text": "project.md"
       },
       {
-        "title": "Inject Params and Log Outputs",
-        "text": "step3.md"
+        "title": "Run & Track Functions",
+        "text": "run1.md"
       },
       {
-        "title": "Using the Functions SDK and Auto-Logging",
-        "text": "step4.md"
+        "title": "Inject Params and View Outputs",
+        "text": "run2.md"
+      },
+      {
+        "title": "Use Data, Train with Auto-Logging",
+        "text": "run3.md"
+      },
+      {
+        "title": "MLRun SDK and Hyper-params",
+        "text": "sdk.md"
       },
       {
         "title": "Workflows and ML Pipeline Automation",
-        "text": "step5.md"
+        "text": "workflow.md"
       },
       {
-        "title": "Running Jobs, Real-Time Functions and Pipelines over Remote Clusters",
-        "text": "step6.md"
+        "title": "Using Remote Clusters",
+        "text": "remote.md"
+      },
+      {
+        "title": "Running Pipelines over Remote Clusters",
+        "text": "remote-pipe.md"
       }
     ],
     "intro": {

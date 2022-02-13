@@ -1,16 +1,3 @@
-Now we will run the training function, and set the input to point to the CSV file (using the `-i` flag):
-
-`mlrun run -f trainer -p label_column=label -i dataset=./artifacts/katacoda/dataset.csv --dump --local`{{execute}}
-
-We use the `--dump` flag to dump the task object in YAML format, you can see the output `results` and `artifacts` in it
-
-> MLRun uses special Data URIs which support different storage options including local or cloud storage, structured data, 
-> **MLRun Feature Store** objects, automated versioning, and security, read more about MLRun [Data Stores and Data Items](https://docs.mlrun.org/en/latest/store/datastore.html). 
-
-Inside the function (see `trainer.py`{{open}}) we use the `DataItem` object which allow us to access data regardless of its type, 
-physical location, format, etc. The `dataset.as_df()` call simply returns a dataframe without the headache of using 
-specific data backend APIs or format.
-
 **Using MLRun SDK to Run Functions**
 
 Open the `examples.py`{{open}} file, we will run different methods in it:
@@ -43,16 +30,6 @@ We will run a GridSearch with couple of parameters, select the best run (with `m
 `python -c 'import examples; examples.run_hyper()'`{{execute}}
 
 > Hyper-param runs also generate an interactive parallel coordinates plot, check it out 
-
-**MLRun Auto-Logging & MLOps Automation**
-
-In the training code we can spot the line with `apply_mlrun(model=model, ...)`, this single line adds a complete set 
-of (framework specific) MLOps automation tasks such as:
-* Auto logging and versioning of parameters, results, artifacts, models, etc.
-* Workload auto-scaling + GPU optimizations (when running over containers)
-* Glueless pipeline and CI/CD integration
-* External reporting and profiling (e.g. to Tensorboard)
-* Control model format conversions and optimizations, and more..
 
 You can notice that our run output include the following auto generated results/artifacts:
 

@@ -32,11 +32,3 @@ Run the data generation function `gen-iris` (this time without the `--local` fla
 Examine the results in the MLRun service UI (see the printed url link `click https://...`)
 
 > Notice we did not have to do any extra engineering work in order to run our Py code as a remote serverless function
-
-**Build a complete pipeline**
-
-...
-
-**Submit to the cluster and view results**
-
-...

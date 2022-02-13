@@ -1,11 +1,19 @@
-The parameters used for the functions are tracked and can be manipulated via the SDK/CLI.
-Run the function again, this time pass `format=parquet` as arg to the function:
+Run the data generation function `gen-iris` (see `gen_iris.py`{{open}}):
 
-`mlrun run -f gen-iris -p format=parquet --local`{{execute}}
+`mlrun run -f gen-iris --local`{{execute}}
 
-You can see that the dataset is now created in `parquet` format
+> `--local` indicate we run locally (not over the cluster)
 
-> The `-p` flag is used to specify parameters, `--local` indicate we run locally (not over the cluster), see `mlrun run --help` for more command options
+Check out the output CSV file in `artifacts/katacoda/dataset.csv`{{open}}
+
+We can run the function using the regular `Python` command, notice the use of MLRun `with mlrun.get_or_create_ctx()` in the code, 
+it wraps your code allowing to automatically track the execution, try the following command:
+
+`python gen_iris.py`{{execute}}
+
+Running `python` however, doesnt allow data/parameter injection and status tracking. 
+
+**Using MLRun execution context**
 
 functions can specify a `context` input or get it using `get_or_create_ctx()`,
 the context allow us to read task metadata (name, uid, ..), parameters, secrets, etc.
@@ -23,14 +31,3 @@ log_artifact(key, body=None, local_path=None, ...)
 log_dataset(key, df, ...) # log a dataframe object
 log_model(key, ...) # log a model object
 ```
-
-Results can be accessed via the CLI, SDK, or UI, click the next line:
-
-`mlrun get run -p katacoda`{{execute}}
-
-MLRun has a rich UI for tracking runs and artifacts:
-
-![MlRun UI](./assets/mlrun-ui.png)
-
-
-> Note: The UI is is installed on the k8s cluster or the managed MLRun service, it can also be installed as local docker image
