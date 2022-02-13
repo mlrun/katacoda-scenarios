@@ -30,7 +30,7 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 
 MLRun has a rich UI for tracking runs and artifacts:
 
-![MlRun UI](https://docs.mlrun.org/en/latest/_static/images/mlrun-quick-start/train-artifacts.png)
+![MlRun UI](./assets/mlrun-ui.png)
 
 
 > Note: The UI is is installed on the k8s cluster or the managed MLRun service, it can also be installed as local docker image
