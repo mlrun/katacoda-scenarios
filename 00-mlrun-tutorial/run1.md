@@ -11,7 +11,7 @@ it wraps your code allowing to automatically track the execution, try the follow
 
 `python gen_iris.py`{{execute}}
 
-Running `python` however, doesnt allow data/parameter injection and status tracking. 
+> When running through `python` we cannot inject parameters/metadata or track status. 
 
 **Using MLRun execution context**
 

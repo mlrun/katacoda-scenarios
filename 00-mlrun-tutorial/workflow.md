@@ -1,6 +1,6 @@
-You can build automated ML pipelines by chaining function runs, they can incorporate custom 
-functions and marketplace functions. Pipelines can also run on a cluster, be scheduled, or run in CI/CD context, 
-you can also use pipelines to deploy services or models.
+You can build automated ML pipelines composed of custom or [marketplace](https://www.mlrun.org/marketplace/functions/) functions. 
+Pipelines can run on a cluster, be scheduled, run in CI/CD context, 
+and/or be used to deploy services and models.
 
 In the following example we run a 3 stage workflow:
 - Run the data generator
@@ -11,14 +11,9 @@ In the following example we run a 3 stage workflow:
 
 Read `simple_pipe()` code in `examples.py`{{open}}, and run the following:
 
-`python -c 'import examples; examples.simple_pipe()'`{{execute}}
-
-We can run pipelines directly from the CLI (or the SDK):
-
 `mlrun project -r examples.py -w --handler simple_pipe --local .`{{execute}}
 
 > When we run a pipeline MLRun adds extra reporting, visualization, and notifications (e.g. to Slack, Git)
-> Pipelines can run locally, over Kubeflow, or inside a CI/CD system (Github Actions, GitLab CI, Jenkins). 
 
 Visual Pipeline Run (in MLRun UI):
 

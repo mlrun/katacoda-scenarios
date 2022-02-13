@@ -36,11 +36,15 @@
         "text": "run3.md"
       },
       {
-        "title": "MLRun SDK and Hyper-params",
+        "title": "Using MLRun SDK",
         "text": "sdk.md"
       },
       {
-        "title": "Workflows and ML Pipeline Automation",
+        "title": "Hyper-params and Iterative Tasks",
+        "text": "hyper.md"
+      },
+      {
+        "title": "ML Workflow Automation",
         "text": "workflow.md"
       },
       {

@@ -1,14 +1,14 @@
-**Using Data in Functions**
-
 Now we will run the training function, and set the input to point to the CSV file (using the `-i` flag):
 
 `mlrun run -f trainer -p label_column=label -i dataset=./artifacts/katacoda/dataset.csv --local`{{execute}}
 
-> MLRun uses special Data URIs which support different storage options including local or cloud storage, structured data, 
-> **MLRun Feature Store** objects, automated versioning, and security, read more about MLRun [Data Stores and Data Items](https://docs.mlrun.org/en/latest/store/datastore.html). 
+> MLRun uses special Data URIs which support different data sources and **MLRun Feature Store** objects, 
+> data versioning, and security, read more about MLRun [Data Stores and Data Items](https://docs.mlrun.org/en/latest/store/datastore.html). 
 
 Inside the function (see `trainer.py`{{open}}) we use the `DataItem` object which allow us to access data regardless of its type, 
-physical location, format, etc. The `dataset.as_df()` call simply returns a dataframe without the headache of using 
+physical location, format, etc. 
+
+The `dataset.as_df()` call simply returns a dataframe without the headache of using 
 specific data backend APIs or format.
 
 **MLRun Auto-Logging & MLOps Automation**

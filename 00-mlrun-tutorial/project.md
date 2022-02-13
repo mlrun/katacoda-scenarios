@@ -4,7 +4,7 @@ See MLRun [Projects documentation](https://docs.mlrun.org/en/latest/projects/ove
 
 **Defining an MLRun project:**
 
-The project root should contain a project specification (YAML) file, you can create it manually
+The project root usually contains a project specification file, you can create it manually
 (see the `project.yaml`{{open}} file), or preferably use MLRun SDK for generating it. 
 
 Example: Defining a project with two functions using the SDK:
@@ -19,8 +19,8 @@ project.export()
 **MLRun Functions**
 
 [MLRun **Function**](https://docs.mlrun.org/en/latest/runtimes/functions.html) define the source code (.py, .ipynb, ..), 
-extra packages, runtime configuration and desired resources (cpu, gpu, mem, storage, ..), functions can also be loaded
+extra packages, runtime configuration and desired resources (cpu, gpu, mem, storage, ..), functions can be loaded
 from the [MLRun Marketplace](https://www.mlrun.org/marketplace/functions/).
 
-MLRun can execute any Python function module, file, handler or class as is over different local and remote **runtime** environments, 
-in this tutorial we demonstrate running a file main (`gen_iris.py`{{open}}) and running a function handler (`trainer.py`{{open}}).
+MLRun can execute an entire file/notebook (see `gen_iris.py`{{open}}) or 
+specific function classes/handlers (`trainer.py`{{open}}).
