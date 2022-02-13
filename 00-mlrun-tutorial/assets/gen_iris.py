@@ -15,5 +15,5 @@ def iris_generator(context, format="csv"):
 
 
 if __name__ == "__main__":
-    with mlrun.get_or_create_ctx("iris_generator") as context:
+    with mlrun.get_or_create_ctx("iris_generator", upload_artifacts=True) as context:
         iris_generator(context, context.get_param("format", "csv"))

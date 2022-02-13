@@ -10,5 +10,5 @@ spec:
   # function handler + auto_log example
   - url: trainer.py
     name: trainer
-    kind: local
+    handler: train
     image: mlrun/mlrun
