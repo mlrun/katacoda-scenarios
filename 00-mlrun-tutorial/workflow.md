@@ -13,7 +13,7 @@ Read `simple_pipe()` code in `examples.py`{{open}}, and run the following:
 
 `mlrun project -r examples.py -w --handler simple_pipe --local .`{{execute}}
 
-> When we run a pipeline MLRun adds extra reporting, visualization, and notifications (e.g. to Slack, Git)
+> When we run a pipeline, MLRun adds extra reporting, visualization, and notifications (e.g. to Slack, Git)
 
 Visual Pipeline Run (in MLRun UI):
 

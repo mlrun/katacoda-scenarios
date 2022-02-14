@@ -1,6 +1,6 @@
 Now we will run the training function, and set the input to point to the CSV file (using the `-i` flag):
 
-`mlrun run -f trainer -p label_column=label -i dataset=./artifacts/katacoda/dataset.csv --local`{{execute}}
+`mlrun run -f trainer -p label_column=label -i dataset=./artifacts/dataset.csv --local`{{execute}}
 
 > MLRun uses special Data URIs which support different data sources and **MLRun Feature Store** objects, 
 > data versioning, and security, read more about MLRun [Data Stores and Data Items](https://docs.mlrun.org/en/latest/store/datastore.html). 

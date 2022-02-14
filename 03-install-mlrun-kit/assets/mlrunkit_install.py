@@ -46,7 +46,7 @@ def _parse_args():
     parser.add_argument("--namespace", type=str, default="mlrun")
     parser.add_argument("--nuclio-ui-url", type=str, default="http://localhost:30050")
     parser.add_argument("--mlrun-ui-url", type=str, default="http://localhost:30060")
-    parser.add_argument("--mlrun-tag", type=str, default="0.9.3")
+    parser.add_argument("--mlrun-tag", type=str, default="0.10.0")
     return parser.parse_args()
 
 

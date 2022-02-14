@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-MLRUN_VERSION=0.9.3
+MLRUN_VERSION=0.10.0
 
 docker pull mlrun/mlrun-api:${MLRUN_VERSION}
 docker pull mlrun/jupyter:${MLRUN_VERSION}

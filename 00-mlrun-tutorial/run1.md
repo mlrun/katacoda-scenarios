@@ -4,7 +4,7 @@ Run the data generation function `gen-iris` (see `gen_iris.py`{{open}}):
 
 > `--local` indicate we run locally (not over the cluster)
 
-Check out the output CSV file in `artifacts/katacoda/dataset.csv`{{open}}
+Check out the output CSV file in `artifacts/dataset.csv`{{open}}
 
 We can run the function using the regular `Python` command, notice the use of MLRun `with mlrun.get_or_create_ctx()` in the code, 
 it wraps your code allowing to automatically track the execution, try the following command:

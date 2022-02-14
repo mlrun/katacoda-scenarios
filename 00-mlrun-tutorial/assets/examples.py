@@ -1,7 +1,7 @@
 import mlrun
 from pprint import pprint
 
-inputs = {"dataset": "./artifacts/katacoda/dataset.csv"}
+inputs = {"dataset": "./artifacts/dataset.csv"}
 
 
 def run(local=True):

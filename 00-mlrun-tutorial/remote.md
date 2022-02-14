@@ -4,7 +4,7 @@ with continuous monitoring and rolling upgrades, allowing us to scale runs, rapi
 **Setting up the remote environment** 
 
 Open the `remote.env`{{open}} file and update the MLRun service address, 
-when using Iguazio manage service or trial set Iguazio credentials which were sent to you, for example:
+when using Iguazio managed service or trial set Iguazio credentials, for example:
 
 ```yaml
 V3IO_USERNAME=joe
@@ -19,11 +19,7 @@ Switch to the remote environment:
 
 `export MLRUN_ENV_FILE=/root/editor/remote.env`{{execute}}
 
-*Run our function on the remote service**
-
-We will first rename the project to something unique (making sure we dont overwrite an existing project):
-
-`sed -i "s/name: katacoda/name: coda-$HOSTNAME/" project.yaml`{{execute}}
+**Run our function on the remote service**
 
 Run the data generation function `gen-iris` (this time without the `--local` flag):
 

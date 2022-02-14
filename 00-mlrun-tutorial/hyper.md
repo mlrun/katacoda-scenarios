@@ -8,7 +8,7 @@ We will run a GridSearch with couple of parameters, select the best run (with `m
 The returned run object in this case represents the `parent` (and the **best** result),
 we can also access the individual child runs (iterations).
 
-check the `artifacts/katacoda/iteration_results.csv`{{open}} file
+check the `artifacts/iteration_results.csv`{{open}} file
 
 or the interactive parallel coordinates plot HTML or UI:
 

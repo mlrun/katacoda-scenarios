@@ -9,7 +9,7 @@ The project root usually contains a project specification file, you can create i
 
 Example: Defining a project with two functions using the SDK:
 ```python
-project = mlrun.new_project("katacoda", "./")
+project = mlrun.new_project("coda", "./", user_project=True)
 project.set_function("gen_iris.py", "gen-iris", image="mlrun/mlrun")
 project.set_function("trainer.py", "gen-iris", 
                      handler="train", image="mlrun/mlrun")
