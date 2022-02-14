@@ -9,11 +9,11 @@ over **remote Kubernetes** (See MLRun-kit install over k8s scenario), or over [*
 
 We will start with creating a project, running and tracking jobs locally.  
 
-to start MLRun DB/API service as a local process:
+Start MLRun DB/API service as a local process:
+
+>  Run the API in the 2nd terminal to save the clutter (click the "+" to open a new terminal)
 
 `mlrun db &`{{execute T2}}
-
->  This will run in the 2nd terminal to save the clutter
 
 Go back to the first terminal and set mlrun environment with basic local configuration (see `local.env`{{open}}):
 

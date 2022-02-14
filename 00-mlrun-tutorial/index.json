@@ -70,7 +70,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
-    "exclusionPatterns": ["__*"]
+    "exclusionPatterns": ["__pycache__", "__pycache__/*"]
   },
   "backend": {
     "imageid": "python:3.8"
