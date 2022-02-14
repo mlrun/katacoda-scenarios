@@ -1,5 +1,5 @@
 {
-  "title": "Develop & Deploy ML Pipelines with MLRun (Tutorial)",
+  "title": "Getting Started with MLRun (Tutorial)",
   "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with K8s or Iguazio's managed MLRun service",
   "difficulty": "Intermediate",
   "time": "15",
@@ -69,7 +69,8 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/editor"
+    "uieditorpath": "/root/editor",
+    "exclusionPatterns": ["__*"]
   },
   "backend": {
     "imageid": "python:3.8"

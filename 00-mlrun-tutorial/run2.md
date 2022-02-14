@@ -9,7 +9,7 @@ You can see that this time the dataset is created in `parquet` format
 
 Results can be accessed via the CLI, SDK, or UI, click the next line:
 
-`mlrun get run -p coda-[[KATACODA_HOST]]`{{execute}}
+`mlrun get run -p coda-[[HOST_SUBDOMAIN]]`{{execute}}
 
 **Explore progress, results and artifacts in MLRun UI**
 

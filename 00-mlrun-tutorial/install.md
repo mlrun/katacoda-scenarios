@@ -11,13 +11,13 @@ We will start with creating a project, running and tracking jobs locally.
 
 to start MLRun DB/API service as a local process:
 
-`mlrun db &`{{execute}}
+`mlrun db &`{{execute T2}}
 
->  it is recommended to run the API in the 2nd terminal to save the clutter (click the "+" to open a new terminal)
+>  This will run in the 2nd terminal to save the clutter
 
 Go back to the first terminal and set mlrun environment with basic local configuration (see `local.env`{{open}}):
 
-`export MLRUN_ENV_FILE=/root/editor/local.env`{{execute}}
+`export MLRUN_ENV_FILE=/root/editor/local.env`{{execute T1}}
 
 > Note: in local runtime environment we cannot build and run containers, to use a remote service with UI and 
 > extended capabilities edit and use `remote.env`.

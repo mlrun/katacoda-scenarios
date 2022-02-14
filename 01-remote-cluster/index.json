@@ -1,6 +1,6 @@
 {
-  "title": "Develop & Deploy ML Pipelines from Jupyter using Iguazio's Managed MLRun Service",
-  "description": "Process data, build ML models, deploy and monitor production pipelines at scale using Jupyter connected to Iguazio's managed MLRun service",
+  "title": "Using Iguazio's MLOps Service (MLRun) from Jupyter",
+  "description": "Process data, build ML models, deploy and monitor production pipelines at scale using Jupyter connected to Iguazio's managed MLOps service",
   "difficulty": "Intermediate",
   "time": "15",
   "details": {
