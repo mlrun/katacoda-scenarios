@@ -33,11 +33,11 @@ def simple_pipe(max_depth=5):
     project = mlrun.load_project("./")
 
     # run the data generation function
-    get_data = project.run_function("gen-iris")
+    get_data = project.run_function("gen-iris", local=True)
 
     # use the dataset output as input to the training function
     trainer = project.run_function(
-        "trainer",
+        "trainer", local=True,
         inputs={"dataset": get_data.outputs["dataset"]},
         params={"max_depth": max_depth},
     )

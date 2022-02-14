@@ -9,13 +9,11 @@ You can see that this time the dataset is created in `parquet` format
 
 Results can be accessed via the CLI, SDK, or UI, click the next line:
 
-`mlrun get run -p katacoda`{{execute}}
+`mlrun get run -p coda-[[KATACODA_HOST]]`{{execute}}
 
-**Explore run progress, results and artifacts in the UI**
+**Explore progress, results and artifacts in MLRun UI**
 
-MLRun has a rich UI for tracking runs and artifacts:
+<img src="./assets/mlrun-ui.png" alt="mlrun-ui" width="400"/>
 
-![MlRun UI](./assets/mlrun-ui.png)
-
-> Note: The UI is usually installed on the k8s cluster or the managed MLRun service, it can also be installed as local docker image
+> Note: The UI is installed on the remote k8s cluster or the managed MLRun service, it can be installed as local docker image
 
