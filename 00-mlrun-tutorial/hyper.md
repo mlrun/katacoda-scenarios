@@ -12,4 +12,4 @@ check the `artifacts/iteration_results.csv`{{open}} file
 
 or the interactive parallel coordinates plot HTML or UI:
 
-![pcp](./images/pcp.png)
+![pcp](./assets/pcp.png)

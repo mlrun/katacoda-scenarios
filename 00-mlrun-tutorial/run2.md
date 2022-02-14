@@ -13,7 +13,7 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 
 **Explore progress, results and artifacts in MLRun UI**
 
-<img src="./images/mlrun-ui.png" alt="mlrun-ui" width="400"/>
+<img src="./assets/mlrun-ui.png" alt="mlrun-ui" width="400"/>
 
 > Note: The UI is installed on the remote k8s cluster or the managed MLRun service, it can be installed as local docker image
 
