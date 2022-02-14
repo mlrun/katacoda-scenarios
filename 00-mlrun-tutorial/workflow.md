@@ -17,7 +17,7 @@ Read `simple_pipe()` code in `examples.py`{{open}}, and run the following:
 
 Visual Pipeline Run (in MLRun UI):
 
-![Pipeline UI](./assets/monitor-workflow.png)
+![Pipeline UI](./images/monitor-workflow.png)
 
 > In addition to batch pipelines, MLRun support Real-Time Pipelines for data processing, APIs, and serving, see: 
 > [MLRun Real-time Serving Pipelines](https://docs.mlrun.org/en/latest/serving/serving-graph.html) docs.

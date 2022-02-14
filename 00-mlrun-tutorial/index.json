@@ -5,13 +5,8 @@
   "time": "15",
   "details": {
     "assets": {
-        "host01": [
-            {"file": "project.yaml", "target": "/root/editor/"},
-            {"file": "local.env", "target": "/root/editor/"},
-            {"file": "remote.env", "target": "/root/editor/"},
-            {"file": "trainer.py", "target": "/root/editor/"},
-            {"file": "gen_iris.py", "target": "/root/editor/"},
-            {"file": "examples.py", "target": "/root/editor/"}
+        "client": [
+            {"file": "*", "target": "/root/editor/"}
         ]
     },
     "steps": [
@@ -70,9 +65,9 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
-    "exclusionPatterns": ["__pycache__", "__pycache__/*"]
+    "exclusionPatterns": ["__pycache__", "/root/editor/__pycache__", "__pycache__/", "__pycache__/*"]
   },
   "backend": {
-    "imageid": "python:3.8"
+    "imageid": "ubuntu:2004"
   }
 }

@@ -16,4 +16,4 @@
 
 MLRUN_VERSION=0.10.0
 
-docker pull mlrun/jupyter:${MLRUN_VERSION}
+docker pull quay.io/mlrun/jupyter:${MLRUN_VERSION}
