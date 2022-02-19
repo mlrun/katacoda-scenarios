@@ -1,5 +1,5 @@
 {
-  "title": "Using Iguazio's MLOps Service (MLRun) from Jupyter",
+  "title": "Using Iguazio's MLRun Service from Local Jupyter",
   "description": "Process data, build ML models, deploy and monitor production pipelines at scale using Jupyter connected to Iguazio's managed MLOps service",
   "difficulty": "Intermediate",
   "time": "15",
