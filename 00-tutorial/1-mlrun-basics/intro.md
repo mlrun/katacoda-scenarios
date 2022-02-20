@@ -1,4 +1,4 @@
-<img src="./../assets/logo.png" width="250x" alt="mlrun">
+<img src="./../../assets/logo.png" width="250x" alt="mlrun">
 
 [MLRun](https://www.mlrun.org) is an end-to-end [open-source](https://github.com/mlrun/mlrun)
 MLOps orchestration framework to manage and automate your entire analytics and machine learning lifecycle, from data ingestion, through

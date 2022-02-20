@@ -9,7 +9,7 @@ Check out the output CSV file in `artifacts/dataset.csv`{{open}}
 We can run the function using the regular `Python` command, notice the use of MLRun `with mlrun.get_or_create_ctx()` in the code, 
 it wraps your code allowing to automatically track the execution, try the following command:
 
-`python gen_iris.py`{{execute}}
+`python3 gen_iris.py`{{execute}}
 
 > When using `python ..` we have limited control over the execution. 
 

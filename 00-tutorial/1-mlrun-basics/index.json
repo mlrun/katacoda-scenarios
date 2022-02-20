@@ -37,6 +37,7 @@
       },
       {
         "title": "Using MLRun SDK",
+        "foreground": "startpy.sh",
         "text": "sdk.md"
       }
     ],
@@ -52,6 +53,7 @@
     }
   },
   "environment": {
+    "hideintro": true,
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
     "exclusionPatterns": ["__pycache__", "/root/editor/__pycache__", "__pycache__/", "__pycache__/*"],

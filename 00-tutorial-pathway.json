@@ -1,5 +1,6 @@
 {
   "title": "MLRun Getting Started Tutorial",
+  "icon": "./assets/avatar.png",
   "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with K8s or Iguazio's managed MLRun service",
   "courses": [
     {
