@@ -16,13 +16,3 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 <img src="./assets/mlrun-ui.png" alt="mlrun-ui" width="400"/>
 
 > Note: The UI is installed on the remote k8s cluster or the managed MLRun service, it can be installed as local docker image
-
-<details><summary>Open to view Data Dictionary</summary>
-
-|Feature|Format|Type|Description|
-|---|---|---|---|
-|**Id**|*integer*|Nominal|Identifier for each property.|
-|**PID**|*integer*|Nominal|Parcel identification number - can be usedwith city web site for parcel review.|
-|**MS SubClass**|*integer*|Nominal|Identifies the type of dwellinginvolved in the sale. Type is coded, please refer to full datadocumentation|
-|**MS Zoning**|*string*|Nominal|Identifies the general zoningclassification of the sale.|
-</details>

@@ -1,5 +1,5 @@
 {
-  "title": "Getting Started with MLRun (Tutorial)",
+  "title": "1. MLRun Basics - Using Functions",
   "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with K8s or Iguazio's managed MLRun service",
   "difficulty": "Intermediate",
   "time": "15",
@@ -32,13 +32,17 @@
         "text": "run2.md"
       },
       {
-        "title": "Use Data, Train with Auto-Logging",
+        "title": "Use Data with Functions",
         "text": "run3.md"
       },
       {
         "title": "Using MLRun SDK",
         "foreground": "startpy.sh",
-        "text": "sdk.md"
+        "text": "sdk1.md"
+      },
+      {
+        "title": "Exploring the Data with an MLRun Marketplace Function",
+        "text": "sdk2.md"
       }
     ],
     "intro": {
