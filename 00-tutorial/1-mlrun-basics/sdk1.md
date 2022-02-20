@@ -17,7 +17,7 @@ run metadata, state, and results while its running (some jobs can run for hours)
 
 - Print the output dataset artifact (`DataItem` object) as dataframe
 
-`gen_data_run.artifact("dataset").as_df().head()`
+`gen_data_run.artifact("dataset").as_df().head()`{{execute}}
 
 Run object has the following methods/properties:
 - `uid()` &mdash; returns the unique ID.
@@ -28,3 +28,6 @@ Run object has the following methods/properties:
 - `artifact(key)` &mdash; returns an artifact (as `DataItem` object).
 - `wait_for_completion()` &mdash; wait for async run to complete
 - `to_dict()`, `to_yaml()`, `to_json()` &mdash; run object serialization.
+
+describe_run = describe.run(params={'label_column': 'label'},
+                            inputs={"table": "./artifacts/dataset.csv"}, local=True)

@@ -23,3 +23,5 @@ Print the list of output results and artifacts:
 `pprint(gen_data_run.outputs)`{{execute}}
 
 Open the UI to see the various charts
+
+**Explore progress, results and artifacts - [Open MLRun UI](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/coda-[[HOST_SUBDOMAIN]]/jobs/monitor-jobs/gen-iris)**

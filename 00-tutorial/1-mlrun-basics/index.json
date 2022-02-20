@@ -2,7 +2,7 @@
   "title": "1. MLRun Basics - Using Functions",
   "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with K8s or Iguazio's managed MLRun service",
   "difficulty": "Intermediate",
-  "time": "15",
+  "time": "20",
   "details": {
     "assets": {
         "client": [
@@ -25,6 +25,7 @@
       },
       {
         "title": "Run & Track Functions",
+        "courseData": "install_extras.sh",
         "text": "run1.md"
       },
       {
@@ -47,7 +48,7 @@
     ],
     "intro": {
       "title": "Introduction",
-      "text": "intro.md",
+      "text": "project.md",
       "courseData": "background.sh",
       "code": "foreground.sh"
     },
@@ -57,7 +58,7 @@
     }
   },
   "environment": {
-    "hideintro": true,
+    "hideintro": false,
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
     "exclusionPatterns": ["__pycache__", "/root/editor/__pycache__", "__pycache__/", "__pycache__/*"],

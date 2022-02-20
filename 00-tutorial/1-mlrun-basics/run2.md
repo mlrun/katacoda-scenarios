@@ -11,7 +11,7 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 
 `mlrun get run -p coda-[[HOST_SUBDOMAIN]]`{{execute}}
 
-**Explore progress, results and artifacts in MLRun UI**
+**Explore progress, results and artifacts - [Open MLRun UI](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/coda-[[HOST_SUBDOMAIN]]/jobs/monitor-jobs/gen-iris)**
 
 <img src="./assets/mlrun-ui.png" alt="mlrun-ui" width="400"/>
 

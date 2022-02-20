@@ -22,7 +22,8 @@ the context allow us to read task metadata (name, uid, ..), parameters, secrets,
 The context also provide APIs to log outputs with `log_result()`, `log_artifact()`, `log_dataset()`, etc. and to `set_label()` 
 (for tagging the run and searching/filtering runs).
 
-<details><summary>Common context methods (read more under [MLRun execution context](https://docs.mlrun.org/en/latest/api/mlrun.execution.html)):</summary>
+<details><summary>Expand to see common context methods:</summary>
+
 * `get_secret(key: str)` &mdash; get the value of a secret
 * `logger.info("started experiment..")`  &mdash; textual logs
 * `log_result(key: str, value)` &mdash; log simple values
@@ -30,4 +31,7 @@ The context also provide APIs to log outputs with `log_result()`, `log_artifact(
 * `log_artifact(key, body=None, local_path=None, ...)` &mdash; log an artifacts (body or local file)
 * `log_dataset(key, df, ...)` &mdash; log a dataframe object
 * `log_model(key, ...)` &mdash; log a model object
+
+read more under [MLRun execution context](https://docs.mlrun.org/en/latest/api/mlrun.execution.html)
+
 </details>
