@@ -5,7 +5,7 @@
     {
       "course_id": "1-mlrun-basics",
       "title": "MLRun Basics - Build & Run Functions",
-      "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with K8s or Iguazio's managed MLRun service"
+      "description": "Define a new project, write, import, run, and track functions"
     }
   ]
 }

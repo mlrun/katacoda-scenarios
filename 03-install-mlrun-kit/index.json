@@ -1,5 +1,6 @@
 {
     "title": "MLRun Open-source Kit Installation Over Kubernetes",
+    "icon": "./../assets/avatar.png",
     "description": "Quick-start guide for Installing MLRun, the open-source MLOps orchestration framework on a Kubernetes cluster",
     "difficulty": "Introduction",
     "time": "20 minutes",

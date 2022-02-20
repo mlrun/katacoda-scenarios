@@ -38,6 +38,22 @@
       {
         "title": "Using MLRun SDK",
         "text": "sdk.md"
+      },
+      {
+        "title": "Hyper-params and Iterative Tasks",
+        "text": "hyper.md"
+      },
+      {
+        "title": "ML Workflow Automation",
+        "text": "workflow.md"
+      },
+      {
+        "title": "Using Remote Clusters",
+        "text": "remote.md"
+      },
+      {
+        "title": "Running Pipelines over Remote Clusters",
+        "text": "remote-pipe.md"
       }
     ],
     "intro": {
