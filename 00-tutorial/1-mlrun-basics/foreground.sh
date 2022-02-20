@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 pip install mlrun[api] --ignore-installed PyYAML
-echo "MLRun Installed"
+pip install sklearn
+echo "MLRun Installed - You can continue now"
 cd editor
