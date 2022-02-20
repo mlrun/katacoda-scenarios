@@ -3,7 +3,7 @@ This marketplace is a centralized location for open-source contributions of func
 in machine-learning development.
 
 Use the `import_function` method, which imports a function object from a file, url or the marketplace (url starts with `hub://`).
-We will use the `describe` function which analyzes a dataset and generates various plots and statistics.
+We will use the `describe` function which analyzes a dataset and generates various plots.
 
 `describe = mlrun.import_function('hub://describe')`{{execute}}
 

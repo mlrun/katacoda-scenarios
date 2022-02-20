@@ -24,13 +24,17 @@ The context also provide APIs to log outputs with `log_result()`, `log_artifact(
 
 <details><summary>Expand to see common context methods:</summary>
 
-* `get_secret(key: str)` &mdash; get the value of a secret
-* `logger.info("started experiment..")`  &mdash; textual logs
-* `log_result(key: str, value)` &mdash; log simple values
-* `set_label(key, value)` &mdash; set a label tag for that task
-* `log_artifact(key, body=None, local_path=None, ...)` &mdash; log an artifacts (body or local file)
-* `log_dataset(key, df, ...)` &mdash; log a dataframe object
-* `log_model(key, ...)` &mdash; log a model object
+<br>
+
+- `get_secret(key: str)` &mdash; get the value of a secret <br>
+- `logger.info("started experiment..")`  &mdash; textual logs <br>
+- `log_result(key: str, value)` &mdash; log simple values <br>
+- `set_label(key, value)` &mdash; set a label tag for that task <br>
+- `log_artifact(key, body=None, local_path=None, ...)` &mdash; log an artifacts (body or local file) <br>
+- `log_dataset(key, df, ...)` &mdash; log a dataframe object <br>
+- `log_model(key, ...)` &mdash; log a model object <br>
+
+<br>
 
 read more under [MLRun execution context](https://docs.mlrun.org/en/latest/api/mlrun.execution.html)
 

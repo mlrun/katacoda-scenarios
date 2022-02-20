@@ -17,4 +17,4 @@ Zoom into the specific run and select the `artifacts` tab
 
 <img src="./assets/mlrun-ui.png" alt="mlrun-ui" width="400"/>
 
-> Note: The UI is installed on the remote k8s cluster or the managed MLRun service, it can be installed as local docker image
+> Note: The UI was installed as local container, and is not fully features like k8s based installation
