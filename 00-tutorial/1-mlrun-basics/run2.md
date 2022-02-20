@@ -13,6 +13,8 @@ Results can be accessed via the CLI, SDK, or UI, click the next line:
 
 **Explore progress, results and artifacts - [Open MLRun UI](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/coda-[[HOST_SUBDOMAIN]]/jobs/monitor-jobs/gen-iris)**
 
+Zoom into the specific run and select the `artifacts` tab
+
 <img src="./assets/mlrun-ui.png" alt="mlrun-ui" width="400"/>
 
 > Note: The UI is installed on the remote k8s cluster or the managed MLRun service, it can be installed as local docker image
