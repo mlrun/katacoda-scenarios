@@ -48,7 +48,7 @@
     ],
     "intro": {
       "title": "Introduction",
-      "text": "project.md",
+      "text": "intro.md",
       "courseData": "background.sh",
       "code": "foreground.sh"
     },
@@ -61,7 +61,6 @@
     "hideintro": false,
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
-    "exclusionPatterns": ["__pycache__", "/root/editor/__pycache__", "__pycache__/", "__pycache__/*"],
     "showdashboard": true,
     "dashboards": [{"name": "MLRun UI", "port": 80}]
   },

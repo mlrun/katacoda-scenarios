@@ -20,8 +20,7 @@ describe_run = describe.run(params={'label_column': 'label'},
 
 Print the list of output results and artifacts:
 
-`pprint(gen_data_run.outputs)`{{execute}}
+`pprint(describe_run.outputs)`{{execute}}
 
-Open the UI to see the various charts
+**[Open the UI](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/coda-[[HOST_SUBDOMAIN]]/jobs/monitor-jobs/describe-summarize) to see the various charts & artifacts**
 
-**Explore progress, results and artifacts - [Open MLRun UI](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/mlrun/projects/coda-[[HOST_SUBDOMAIN]]/jobs/monitor-jobs/gen-iris)**

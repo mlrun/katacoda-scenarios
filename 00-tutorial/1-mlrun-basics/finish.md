@@ -1,17 +1,10 @@
+## MLRun Documentation
 
-**TBD**
+[docs.mlrun.org](https://docs.mlrun.org/en/latest/)
 
-## Additional Training Scenarios:
-* **MLRun Feature Store**
-* **MLRun Real-time Pipelines & Serving**
-* **CI/CD for ML With MLRun**
-* **Automating Deep Learning (TensorFlow & PyTourch) with MLRun**
+## Links:
 
-## Documentation:
-* TBD
-
-
-## Contact US:
-* Slack:
-* Github: 
-* Iguazio:
+* [**mlrun.org**](https://www.mlrun.org/)
+* [**Slack**](https://join.slack.com/t/mlopslive/shared_invite/zt-s9dodwg0-FmMOS6FowidJS0o3QeS6Eg)
+* [**Github**](https://github.com/mlrun/mlrun)
+* [**Iguazio**](https://www.iguazio.com/)
