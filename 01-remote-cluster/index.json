@@ -1,0 +1,43 @@
+{
+  "title": "Using Iguazio's MLRun Service from Local Jupyter",
+  "description": "Process data, build ML models, deploy and monitor production pipelines at scale using Jupyter connected to Iguazio's managed MLOps service",
+  "difficulty": "Intermediate",
+  "time": "15",
+  "details": {
+    "steps": [
+      {
+        "title": "Start Jupyter and Connect To MLRun Service",
+        "text": "step1.md"
+      },
+      {
+        "title": "Run the Quick Start",
+        "text": "step2.md"
+      },
+      {
+        "title": "Run the MLRun Tutorial",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "title": "Introduction",
+      "text": "intro.md",
+      "courseData": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+    "environment": {
+        "showdashboards": true,
+        "dashboards": [
+            {
+                "name": "Jupyter",
+                "port": 8888
+            }
+        ],
+        "uilayout": "terminal-iframe"
+    },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

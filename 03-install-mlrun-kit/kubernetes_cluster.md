@@ -1,7 +1,3 @@
-To spin up your cluster, click on:
-
-`launch.sh`{{execute}}
-
 Wait a few seconds, to allow Katacoda to spin up your Kubernetes cluster.
 
 First, you will be using [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/), the Kubernetes
@@ -10,6 +6,10 @@ First, you will be using [Kubectl](https://kubernetes.io/docs/reference/kubectl/
 Run the below command now, to see some basic info about your newly created cluster:
 
 `kubectl get nodes -o wide && kubectl cluster-info`{{execute}}
+
+Create a namespace for the deployed MLRun components and functions
+
+`kubectl create namespace mlrun`{{execute}}
 
 Next up, you will be using [Helm](https://helm.sh/docs/) - a command line package manager for Kubernetes.
 

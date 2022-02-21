@@ -1,14 +1,15 @@
 {
-    "title": "MLRun Kit Quick-Start Guide",
-    "description": "Quick-start guide for MLRun, the open-source MLOps orchestration framework",
-    "difficulty": "Introduction",
+    "title": "MLRun Open-source Kit Installation Over Kubernetes",
+    "icon": "./../assets/avatar.png",
+    "description": "Quick-start guide for Installing MLRun, the open-source MLOps orchestration framework on a Kubernetes cluster",
+    "difficulty": "Intermediate",
     "time": "20 minutes",
     "details": {
         "assets": {
             "host01": [
                 {
                     "file": "mlrunkit_install.py",
-                    "target": "/usr/local/bin/",
+                    "target": "/bin/",
                     "chmod": "+x"
                 }
             ]
@@ -34,6 +35,7 @@
         "intro": {
             "title": "Introduction",
             "courseData": "background.sh",
+            "code": "foreground.sh",
             "text": "intro.md"
         },
         "finish": {

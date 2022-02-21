@@ -9,5 +9,5 @@ Click [here](https://www.katacoda.com/mlrun) for _all_ MLRun interactive courses
 
 ## Tutorials
 
-- [Quick-Start](./quick-start/intro.md)
+- [Quick-Start](03-install-mlrun-kit/intro.md)
 - Distributed MLOps with MLRun and Kubeflow (TBD)

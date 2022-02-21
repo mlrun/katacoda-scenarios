@@ -40,27 +40,33 @@ def main():
 def _parse_args():
     parser = argparse.ArgumentParser(description="Install MLRun Kit interactively")
 
-    parser.add_argument("--chart-version", type=str, default="0.1.16")
+    parser.add_argument("--chart-version", type=str, default="0.1.15")
     parser.add_argument("--registry-url", type=str, default="localhost:5000")
     parser.add_argument("--timeout", type=str, default="10m")
     parser.add_argument("--namespace", type=str, default="mlrun")
     parser.add_argument("--nuclio-ui-url", type=str, default="http://localhost:30050")
     parser.add_argument("--mlrun-ui-url", type=str, default="http://localhost:30060")
-    parser.add_argument("--jupyter-image-tag", type=str, default="0.9.3")
+    parser.add_argument("--mlrun-tag", type=str, default="0.10.0")
     return parser.parse_args()
 
 
 def _resolve_install_command(args):
-    return f"helm install mlrun-kit \
+    cmd = f"helm install mlrun-kit \
     --namespace {args.namespace} \
     --wait \
     --timeout {args.timeout} \
     --version {args.chart_version} \
+    --set nuclio.controller.image.tag=1.7.4-amd64 \
+    --set nuclio.dashboard.image.tag=1.7.4-amd64 \
     --set mlrun.nuclio.uiURL={args.nuclio_ui_url} \
+    --set mlrun.image.tag={args.mlrun_tag} \
+    --set ui.image.tag={args.mlrun_tag} \
     --set jupyterNotebook.mlrunUIURL={args.mlrun_ui_url} \
     --set global.registry.url={args.registry_url} \
-    --set jupyterNotebook.image.tag={args.jupyter_image_tag} \
-    v3io-stable/mlrun-kit"
+    --set jupyterNotebook.image.tag={args.mlrun_tag}"
+    if "katacoda.com" not in args.registry_url:
+        cmd += " --set global.registry.secretName=registry-credentials"
+    return cmd + " v3io-stable/mlrun-kit"
 
 
 def _spin_while_waiting_for_process(process):
