@@ -1,13 +1,13 @@
 Please wait until the (pip) install is completed before moving forward !
 
-MLRun support running and tracking functions **locally** (with partial capabilities), 
-over **remote Kubernetes** (See MLRun-kit install over k8s scenario), or over [**Iguazio's**](https://www.iguazio.com/) managed MLOps service. 
+MLRun supports running and tracking functions **locally** (with partial capabilities), 
+over **remote Kubernetes** (See MLRun-kit install over k8s scenario), or over [**Iguazio's**](https://www.iguazio.com/), a managed MLOps platform. 
 
 We will start with local execution.  
 
 Start MLRun DB/API service as a local process:
 
->  Run the API in the 2nd terminal to save the clutter (click the "+" to open a new terminal)
+>  Run the API in the 2nd terminal to save the cluster (click the "+" to open a new terminal)
 
 `mlrun db &`{{execute T2}}
 
