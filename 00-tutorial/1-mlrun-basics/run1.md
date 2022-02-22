@@ -4,8 +4,8 @@ Run the data generation function `gen-iris` (see `gen_iris.py`{{open}}):
 
 > `--local` indicate we run locally (not over the cluster)
 
-Notice the use of MLRun `with mlrun.get_or_create_ctx()` in the code, 
-it wraps your code allowing to automatically track the execution.
+Notice the use of MLRun `with mlrun.get_or_create_ctx()` in the code: 
+it wraps your code, automatically tracking the execution.
 
 Check out the output CSV file in `artifacts/dataset.csv`{{open}}
 
@@ -17,7 +17,7 @@ However, when using `python` we have limited control over the execution.
 
 **Using MLRun execution context**
 
-functions can specify a `context` input or get it using `get_or_create_ctx()`,
+Functions can specify a `context` input or get it using `get_or_create_ctx()`,
 the context allow us to read task metadata (name, uid, ..), parameters, secrets, etc.
 The context also provide APIs to log outputs with `log_result()`, `log_artifact()`, `log_dataset()`, etc. and to `set_label()` 
 (for tagging the run and searching/filtering runs).
