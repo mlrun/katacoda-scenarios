@@ -1,4 +1,4 @@
-MLRun support running **hyper-param** jobs in parallel with various strategies and options (read the about MLRun
+MLRun supports running **hyper-param** jobs in parallel with various strategies and options (read the about MLRun
 [Hyper-Param and Iterative jobs](https://docs.mlrun.org/en/latest/hyper-params.html)).
  
 We will run a GridSearch with couple of parameters, select the best run (with `max accuracy`) and print the results:
