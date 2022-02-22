@@ -1,6 +1,6 @@
-- Load the current project:
+- Load the current project (and init the git repo for it):
 
-`project = mlrun.load_project("./")`{{execute}}
+`project = mlrun.load_project("./", init_git=True)`{{execute}}
 
 - Run the iris data gen function:
 

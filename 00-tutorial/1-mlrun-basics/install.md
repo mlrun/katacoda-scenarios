@@ -1,7 +1,7 @@
 Please wait until the (pip) install is completed before moving forward !
 
-MLRun support running and tracking functions **locally** (with partial capabilities), 
-over **remote Kubernetes** (See MLRun-kit install over k8s scenario), or over [**Iguazio's**](https://www.iguazio.com/) managed MLOps service. 
+MLRun supports running and tracking functions **locally** (with partial capabilities), 
+over **remote Kubernetes** (See MLRun-kit install over k8s scenario), or over [**Iguazio's**](https://www.iguazio.com/), a managed MLOps platform. 
 
 We will start with local execution.  
 

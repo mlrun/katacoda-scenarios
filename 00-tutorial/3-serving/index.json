@@ -6,43 +6,32 @@
   "details": {
     "assets": {
         "client": [
-            {"file": "project.yaml", "target": "/root/editor/"},
             {"file": "local.env", "target": "/root/editor/"},
             {"file": "remote.env", "target": "/root/editor/"},
-            {"file": "trainer.py", "target": "/root/editor/"},
-            {"file": "gen_iris.py", "target": "/root/editor/"}
+            {"file": "serving.py", "target": "/root/editor/"}
         ]
     },
     "steps": [
       {
-        "title": "MLRun Projects and Functions",
-        "text": "project.md"
+        "title": "MLRun Serving Pipelines Overview",
+        "text": "serving.md"
       },
       {
-        "title": "Install & Configure MLRun (Locally)",
-        "text": "install.md"
+        "title": "Building Serving Pipelines",
+        "text": "serving2.md"
       },
       {
-        "title": "Run & Track Functions",
+        "title": "Create a Model Serving Function",
         "courseData": "install_extras.sh",
-        "text": "run1.md"
+        "text": "start.md"
       },
       {
-        "title": "Inject Params and View Outputs",
-        "text": "run2.md"
+        "title": "Test the Model Server",
+        "text": "testing.md"
       },
       {
-        "title": "Use Data with Functions",
-        "text": "run3.md"
-      },
-      {
-        "title": "Using MLRun SDK",
-        "foreground": "startpy.sh",
-        "text": "sdk1.md"
-      },
-      {
-        "title": "Exploring the Data with an MLRun Marketplace Function",
-        "text": "sdk2.md"
+        "title": "Deploy The Model Server",
+        "text": "deploy.md"
       }
     ],
     "intro": {
@@ -57,11 +46,11 @@
     }
   },
   "environment": {
-    "hideintro": false,
+    "hideintro": true,
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
     "showdashboard": true,
-    "dashboards": [{"name": "MLRun UI", "port": 80}]
+    "dashboards": [{"name": "Nuclio UI", "port": 8070}]
   },
   "backend": {
     "imageid": "ubuntu:2004"
