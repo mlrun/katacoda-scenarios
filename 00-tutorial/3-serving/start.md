@@ -1,6 +1,15 @@
 
 Please wait until the install is completed before moving forward !
 
+`MLRUN_NUCLIO_DASHBOARD_URL=http://localhost:8070 mlrun db &`{{execute T2}}
+
+```python
+python3 --version
+python3
+import mlrun
+from pprint import pprint
+```{{execute T1}}
+
 - Define a new project:
 
 `project = mlrun.new_project("coda-[[HOST_SUBDOMAIN]]")`{{execute}}
