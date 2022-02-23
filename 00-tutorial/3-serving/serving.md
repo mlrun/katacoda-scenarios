@@ -1,6 +1,4 @@
-Instal MLRun package and sklearn (using: `pip install mlrun`)(this may take a few minutes!)
-
-We will start by reviewing the MLRun project and function objects:
+Instal MLRun package and sklearn (using: `pip install mlrun[api]`), this may take a few minutes!
 
 **MLRun Serving Pipelines**
 
