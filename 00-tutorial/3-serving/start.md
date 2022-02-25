@@ -1,19 +1,16 @@
+Please wait until the (pip) install is completed and MLRun DB/API service has started before moving forward !
 
-Please wait until the install is completed before moving forward !
+This setup include a local MLRun service and local Nuclio service (running in a container)
 
-
-```python
-python3 --version
-python3
-import mlrun
-from pprint import pprint
-```{{execute}}
-
-- Define a new project:
+> In order to work with a remote k8s cluster or [**Iguazio's platform**](https://www.iguazio.com/) you need to edit the 
+> `remote.env`{{open}} file with the remote address and credentials and swap the environment using the call: 
+> `mlrun.set_env_from_file("remote.env")` 
+ 
+- Define a new project (for our functions):
 
 `project = mlrun.new_project("coda-[[HOST_SUBDOMAIN]]")`{{execute}}
 
-- Define a new serving function from source code (`serving.py`{{open}}):
+- Create a new serving function from source code (`serving.py`{{open}}):
 
 `serving_fn = mlrun.code_to_function('serving', filename="serving.py", kind='serving',image='mlrun/mlrun')`{{execute}}
 
