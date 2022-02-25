@@ -10,7 +10,8 @@
             {"file": "local.env", "target": "/root/editor/"},
             {"file": "remote.env", "target": "/root/editor/"},
             {"file": "trainer.py", "target": "/root/editor/"},
-            {"file": "gen_iris.py", "target": "/root/editor/"}
+            {"file": "gen_iris.py", "target": "/root/editor/"},
+            {"file": "start-mlrundb.sh", "target": "/bin/", "chmod": "+x"}
         ]
     },
     "steps": [
