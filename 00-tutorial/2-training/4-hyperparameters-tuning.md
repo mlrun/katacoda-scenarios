@@ -1,15 +1,35 @@
-MLRun supports running **hyper-param** jobs in parallel with various strategies and options (read the about MLRun
+## Hyperparameters Tuning
+
+We will now multiple jobs in prallel for **hyperparameters tuning**. We will run a `GridSearch` with couple of 
+parameters, select the best run with respect to the `max accuracy`. (read more about MLRun 
 [Hyper-Param and Iterative jobs](https://docs.mlrun.org/en/latest/hyper-params.html)).
- 
-We will run a GridSearch with couple of parameters, select the best run (with `max accuracy`) and print the results:
 
-`python -c 'import examples; examples.run_hyper()'`{{execute}}
+We will run our hyperparameters tuning job by using the keywords arguments: 
 
-The returned run object in this case represents the `parent` (and the **best** result),
-we can also access the individual child runs (iterations).
+* `hyperparams` for the hyperparameters options and values of choice.
+* `selector` for specifying how to select the best model.
 
-check the `artifacts/iteration_results.csv`{{open}} file
+```python
+hp_tuning_run = project.run_function(
+    "trainer", inputs=inputs, 
+    hyperparams={
+        "n_estimators": [100, 500, 1000], 
+        "max_depth": [5, 15, 30]
+    }, 
+    selector="max.accuracy", 
+    local=True
+)
+```{{execute}}
 
-or the interactive parallel coordinates plot HTML or UI:
+The returned run object in this case represents the `parent` (and the **best** result), we can also access the 
+individual child runs (called iterations in the MLRun UI).
+
+## Review the Results
+
+Let's review the results by printing the artifact `iteration_results`:
+
+```pprint(run_results.artifact("iteration_results").as_df().to_string())```{{execute}}
+
+In addition, you can check our the parallel coordinates plot in the MLRun UI!
 
 ![pcp](./assets/pcp.png)
