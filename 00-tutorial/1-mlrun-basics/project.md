@@ -1,6 +1,7 @@
-Instal MLRun package and sklearn (using: `pip install mlrun[api] sklearn plotly`)(this may take a few minutes!)
+Installing MLRun package and sklearn, this may take a few minutes!: 
+`> pip install mlrun[api] scikit-learn plotly`
 
-We will start by reviewing the MLRun project and function objects:
+We will start by reviewing MLRun project and functions:
 
 **MLRun project**
 
