@@ -29,8 +29,8 @@ individual child runs (called iterations in the MLRun UI).
 
 Let's review the results by printing the artifact `iteration_results`:
 
-```pprint(run_results.artifact("iteration_results").as_df().to_string())```{{execute}}
+```print(hp_tuning_run.artifact("iteration_results").as_df().to_string())```{{execute}}
 
 In addition, you can check our the parallel coordinates plot in the MLRun UI!
 
-![pcp](./assets/pcp.png)
+![parallel_coordinates](./assets/parallel_coordinates.png)

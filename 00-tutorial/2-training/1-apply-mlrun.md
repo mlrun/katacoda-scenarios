@@ -3,9 +3,9 @@
 
 <br>
 
-  - `mlrun[api]` &mdash; MLRun including its API requirements. <br>
-  - `scikit-learn`  &mdash; As our ML framework to develop our model. <br>
-  - `plotly` &mdash; In order to plot some artifacts of our training. <br>
+- `mlrun[api]` &mdash; MLRun including its API requirements. <br>
+- `scikit-learn`  &mdash; As our ML framework to develop our model. <br>
+- `plotly` &mdash; In order to plot some artifacts of our training. <br>
 
 </details>
 
@@ -46,12 +46,12 @@ configurations. We highly suggest reading the docs of your favorite framework.
 You may click on the required framework to go to its documentation in MLRun's docs: <br>
 <br>
 
-  - [SciKit-Learn](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.sklearn.html) <br>
-  - [TensorFlow (and Keras)](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.tf_keras.html) <br>
-  - [PyTorch](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.pytorch.html) <br>  
-  - [XGBoost](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.xgboost.html) <br> 
-  - [LightGBM](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.lgbm.html) <br> 
-  - [ONNX](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.onnx.html) <br>
+- [SciKit-Learn](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.sklearn.html) <br>
+- [TensorFlow (and Keras)](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.tf_keras.html) <br>
+- [PyTorch](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.pytorch.html) <br>  
+- [XGBoost](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.xgboost.html) <br> 
+- [LightGBM](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.lgbm.html) <br> 
+- [ONNX](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.onnx.html) <br>
 
 </details>
 
