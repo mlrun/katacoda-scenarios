@@ -1,10 +1,8 @@
-Installing MLRun package and sklearn (`pip install mlrun[api] scikit-learn`), this may take a few minutes!
+Installing MLRun package and sklearn, this may take a few minutes!: `> pip install mlrun[api] scikit-learn`
 
 This part of the tutorial walks you through the steps for creating, testing, and deploying serving pipelines 
 
-**MLRun Serving Pipelines**
-
-**MLRun serving** allow to easily build serverless pipelines using Nuclio real-time serverless engine, and deploy them anywhere.
+**MLRun Serving Pipelines** allow to easily build serverless pipelines using Nuclio real-time serverless engine, and deploy them anywhere.
 [Nuclio](https://nuclio.io/) is a high-performance open-source "serverless" framework that's focused on data, I/O, and compute-intensive workloads.
 
 The real-time pipelines can handle events and data processing across structured and unstructured (text, images, video) data, 
