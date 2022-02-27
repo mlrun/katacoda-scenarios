@@ -1,8 +1,8 @@
 {
   "title": "2. Train and Log Models",
-  "description": "Develop ML pipelines locally on standard Python IDE, easily move to production at scale with K8s or Iguazio's managed MLRun service",
+  "description": "Use MLRun frameworks features to improve your model development and research.",
   "difficulty": "Intermediate",
-  "time": "15",
+  "time": "10",
   "details": {
     "assets": {
         "client": [
@@ -11,50 +11,27 @@
             {"file": "remote.env", "target": "/root/editor/"},
             {"file": "trainer.py", "target": "/root/editor/"},
             {"file": "gen_iris.py", "target": "/root/editor/"},
-            {"file": "examples.py", "target": "/root/editor/"}
+            {"file": "start-mlrundb.sh", "target": "/bin/", "chmod": "+x"}
         ]
     },
     "steps": [
       {
-        "title": "MLRun Projects and Functions",
-        "text": "project.md"
+        "title": "MLRun Model Development",
+        "text": "1-apply-mlrun.md"
       },
       {
         "title": "Install & Configure MLRun (Locally)",
-        "text": "install.md"
+        "text": "2-install.md"
       },
       {
-        "title": "Run & Track Functions",
-        "text": "run1.md"
+        "title": "Training & Automatic Logging",
+        "foreground": "startpy.sh",
+        "text": "3-training.md"
       },
       {
-        "title": "Inject Params and View Outputs",
-        "text": "run2.md"
+        "title": "Hyperparameters Tuning",
+        "text": "4-hyperparameters-tuning.md"
       },
-      {
-        "title": "Use Data, Train with Auto-Logging",
-        "text": "run3.md"
-      },
-      {
-        "title": "Using MLRun SDK",
-        "text": "sdk.md"
-      },
-      {
-        "title": "Hyper-params and Iterative Tasks",
-        "text": "hyper.md"
-      },
-      {
-        "title": "ML Workflow Automation",
-        "text": "workflow.md"
-      },
-      {
-        "title": "Using Remote Clusters",
-        "text": "remote.md"
-      },
-      {
-        "title": "Running Pipelines over Remote Clusters",
-        "text": "remote-pipe.md"
-      }
     ],
     "intro": {
       "title": "Introduction",
@@ -68,9 +45,9 @@
     }
   },
   "environment": {
+    "hideintro": false,
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
-    "exclusionPatterns": ["__pycache__", "/root/editor/__pycache__", "__pycache__/", "__pycache__/*"],
     "showdashboard": true,
     "dashboards": [{"name": "MLRun UI", "port": 80}]
   },

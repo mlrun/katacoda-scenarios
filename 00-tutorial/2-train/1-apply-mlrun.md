@@ -26,7 +26,7 @@ With just one line of code, MLRun is seamlessly being integrated onto your code,
   * Dask (for SciKit-Learn, XGBoost and LightGBM)
 * And more.
 
-The MLRun **one line** magic is:
+The MLRun **one line** magic is simply, a function:
 
 ```python
 apply_mlrun(model=my_model, model_name="my_model")
@@ -50,3 +50,9 @@ You may click on the required framework to go to its documentation in MLRun's do
 * [ONNX](https://docs.mlrun.org/en/latest/api/mlrun.frameworks/mlrun.frameworks.onnx.html) 
 
 </details>
+
+In this tutorial, we will use SciKit-Learn as our framework of choice. We will:
+1. Add `apply_mlrun` to our training code and run the training.
+2. Explore the artifacts and metrics yielded.
+3. Run hyperparameter-tuning &mdash; multiple training runs to get our best model.
+4. Explore the hp-tuning special artifacts.
