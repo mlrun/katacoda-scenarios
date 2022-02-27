@@ -19,7 +19,6 @@ and [Model Monitoring](https://docs.mlrun.org/en/stable/model_monitoring/index.h
 The tutorial consists of the following steps:
 
 1. Setup and Configuration
-2. Writing A Simple Serving Class
-3. Deploying the Model-Serving Function (Service)
-4. Using the Live Model-Serving Function
-5. Viewing the Nuclio Serving Function on the Dashboard
+2. Writing and Testing a Simple Serving Class
+3. Deploying the Model-Serving Function (to Nuclio)
+4. Using the Live Model-Serving Function (via UI or API)
