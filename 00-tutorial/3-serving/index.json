@@ -1,0 +1,59 @@
+{
+  "title": "3. Build & Deploy Serving Functions",
+  "description": "Walks through the steps for implementing and deploying ML model serving using MLRun serving and Nuclio runtimes",
+  "difficulty": "Intermediate",
+  "time": "15",
+  "details": {
+    "assets": {
+        "client": [
+            {"file": "local.env", "target": "/root/editor/"},
+            {"file": "remote.env", "target": "/root/editor/"},
+            {"file": "serving.py", "target": "/root/editor/"},
+            {"file": "start-mlrundb.sh", "target": "/bin/", "chmod": "+x"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "MLRun Serving Pipelines Overview",
+        "text": "serving.md"
+      },
+      {
+        "title": "Building Serving Pipelines",
+        "text": "serving2.md"
+      },
+      {
+        "title": "Create a Model Serving Function",
+        "courseData": "install_extras.sh",
+        "text": "start.md"
+      },
+      {
+        "title": "Test the Model Server",
+        "text": "testing.md"
+      },
+      {
+        "title": "Deploy The Model Server",
+        "text": "deploy.md"
+      }
+    ],
+    "intro": {
+      "title": "Introduction",
+      "text": "intro.md",
+      "courseData": "background.sh",
+      "code": "foreground.sh"
+    },
+    "finish": {
+      "title": "Additional Reading and Links",
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/editor",
+    "showdashboard": true,
+    "dashboards": [{"name": "Nuclio UI", "port": 8070}]
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
