@@ -11,7 +11,8 @@ We will run our hyperparameters tuning job by using the keywords arguments:
 
 ```python
 hp_tuning_run = project.run_function(
-    "trainer", inputs=inputs, 
+    "trainer", 
+    inputs={"dataset": gen_data_run.outputs["dataset"]}, 
     hyperparams={
         "n_estimators": [100, 500, 1000], 
         "max_depth": [5, 15, 30]
