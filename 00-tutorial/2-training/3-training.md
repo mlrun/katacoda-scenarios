@@ -1,4 +1,4 @@
-**Training with MLRun**
+## Training with MLRun
 
 First, we will load the project and run the data generation function `gen-iris` as we learned in the previous scenario:
 
@@ -39,21 +39,20 @@ trainer_run = project.run_function(
 )
 ```{{execute}}
 
-**MLRun's Automatic Logging**
+## MLRun's Automatic Logging
 
 The auto-logging for SciKit-Learn includes many plots and metrics. The metrics and artifacts are chosen according to the 
 model algorithm used (classification or regression). You are able to add more metrics and artifacts and even write your 
 own. To learn more about choosing metrics, artifacts and adding custom ones, we suggest reading more on MLRun's docs.
 
-Let us print first the metrics results our model scored:
-
-`pprint(trainer_run.results)`{{execute}}
-
-Now, let's explore the produced artifacts:
+Let us print the metrics results our model scored and the produced artifacts:
 
 `pprint(trainer_run.outputs)`{{execute}}
 
-You can check out the artifacts on the MLRun UI!
+You can check out the resutls and artifacts on the MLRun UI!
+
+![artifacts](./assets/artifacts.png)
+![results](./assets/results.png)
 
 All of the metrics and artifacts, are stored as metadata of our model itself, so it will be easy to do comparison 
 between models later on.
