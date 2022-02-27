@@ -9,6 +9,11 @@
       "description": "Define a new project, write, import, run, and track functions"
     },
     {
+      "course_id": "2-training",
+      "title": "Train & Log Models",
+      "description": "Use MLRun frameworks features to improve your model development and research."
+    },
+    {
       "course_id": "3-serving",
       "title": "Build & Deploy Serving Functions",
       "description": "Walks through the steps for implementing and deploying ML model serving using MLRun serving and Nuclio runtimes"
