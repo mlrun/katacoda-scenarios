@@ -1,14 +1,18 @@
-- Deploy the function as a local container
+Once the function is ready and tested, we deploy it as a real-time serverless function (using Nuclio).
 
 `function_address = serving_fn.deploy()`{{execute}}
 
-**[Open the Nuclio UI](https://[[HOST_SUBDOMAIN]]-8070-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/projects/coda-[[HOST_SUBDOMAIN]]/functions/coda-[[HOST_SUBDOMAIN]]-serving/code) to see the function**
+[**Open the Nuclio UI**](https://[[HOST_SUBDOMAIN]]-8070-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/projects/coda-[[HOST_SUBDOMAIN]]/functions/coda-[[HOST_SUBDOMAIN]]-serving/code) 
+to see the function and build progress, this may take a few minutes !.
 
-Once the function is deployed we can make direct HTTP calls to it using the `invoke()` method
+> We can also save the function and deploy it later on another cluster, or deploy the function as part of a CI/CD pipeline.
 
-- list models behind the function endpoint/router
+Once the function is deployed we can make direct HTTP calls to it using the `invoke()` method,
+here are couple of examples:
 
-`serving_fn.invoke("/v2/models", method="GET")`{{execute}}`
+- get model metadata
+
+`serving_fn.invoke("/v2/models/my_model", method="GET")`{{execute}}`
 
 - Make prediction using `my_model` and the vectors in `my_data`
 
