@@ -34,7 +34,7 @@ So, Let us run the training! Our training function is already set in the project
 ```python
 trainer_run = project.run_function(
     "trainer", 
-    inputs={"dataset": gen_data_run.artifact("dataset")}, 
+    inputs={"dataset": gen_data_run.outputs["dataset"]}, 
     local=True
 )
 ```{{execute}}
