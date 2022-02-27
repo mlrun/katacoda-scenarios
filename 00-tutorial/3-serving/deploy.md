@@ -1,6 +1,6 @@
 - Deploy the function as a local container
 
-`function_address = serving_fn.deploy("http://localhost:8070")`{{execute}}
+`function_address = serving_fn.deploy()`{{execute}}
 
 **[Open the Nuclio UI](https://[[HOST_SUBDOMAIN]]-8070-[[KATACODA_HOST]].[[KATACODA_DOMAIN]]/projects/coda-[[HOST_SUBDOMAIN]]/functions/coda-[[HOST_SUBDOMAIN]]-serving/code) to see the function**
 
