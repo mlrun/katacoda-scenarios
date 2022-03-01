@@ -32,7 +32,7 @@ When running Hyper-param job the job `results` tab showes us the list and marks 
 
 We can also view results by printing the artifact `iteration_results`:
 
-```hp_tuning_run.artifact("iteration_results").as_df())```{{execute}}
+```hp_tuning_run.artifact("iteration_results").as_df()```{{execute}}
 
 MLRun also generates a `parallel coordinates plot` for the run, you can view it in the MLRun UI!
 
