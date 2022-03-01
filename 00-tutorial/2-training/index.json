@@ -48,7 +48,7 @@
     }
   },
   "environment": {
-    "hideintro": false,
+    "hideintro": true,
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/editor",
     "showdashboard": true,

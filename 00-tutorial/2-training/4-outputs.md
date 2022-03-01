@@ -11,8 +11,6 @@ Once the run is complete [**open the MLRun UI**](https://[[HOST_SUBDOMAIN]]-80-[
 
 <img src="./assets/artifacts.png" alt="artifacts" width="400"/>
 
-<img src="./assets/results.png" alt="results" width="400"/>
-
 > All of the metrics and artifacts, are stored as metadata of our model, so it will be easy to do comparison 
 > between models later on.
 
@@ -24,7 +22,8 @@ to see the models
 
 <img src="./assets/models.png" alt="models" width="500"/>
 
-Listing the model objects, and printing as YAML:
+Model objects can be read from MLRun DB and used in different applications, in the following example we list all 
+model objects and print one as YAML, notice the amount of details automatically stored with the model (results, artifacts, statistics, schema, etc.)
 
 ```python
 models = mlrun.get_run_db().list_artifacts(kind="model")
