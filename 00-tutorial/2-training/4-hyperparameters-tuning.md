@@ -33,3 +33,4 @@ Let's review the results by printing the artifact `iteration_results`:
 In addition, you can check our the parallel coordinates plot in the MLRun UI!
 
 ![parallel_coordinates](./assets/parallel_coordinates.png)
+
