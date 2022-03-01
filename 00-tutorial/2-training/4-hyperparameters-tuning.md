@@ -1,10 +1,9 @@
-## Hyperparameters Tuning
 
 We will now multiple jobs in prallel for **hyperparameters tuning**. We will run a `GridSearch` with couple of 
 parameters, select the best run with respect to the `max accuracy`. (read more about MLRun 
 [Hyper-Param and Iterative jobs](https://docs.mlrun.org/en/latest/hyper-params.html)).
 
-We will run our hyperparameters tuning job by using the keywords arguments: 
+For basic usage we can run our hyperparameters tuning job by using the keywords arguments: 
 
 * `hyperparams` for the hyperparameters options and values of choice.
 * `selector` for specifying how to select the best model.

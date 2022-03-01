@@ -17,15 +17,15 @@
     "steps": [
       {
         "title": "MLRun Model Development",
-        "text": "1-apply-mlrun.md"
+        "text": "1-training.md"
       },
       {
-        "title": "Install & Configure MLRun (Locally)",
-        "text": "2-install.md"
+        "title": "Auto logging and MLOps",
+        "text": "2-apply-mlrun.md"
       },
       {
-        "title": "Training & Automatic Logging",
-        "text": "3-training.md"
+        "title": "Running and Tracking Experiments",
+        "text": "3-run.md"
       },
       {
         "title": "Hyperparameters Tuning",

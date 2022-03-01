@@ -26,7 +26,7 @@ def train(
         n_estimators=n_estimators, max_depth=max_depth
     )
 
-    # Apply MLRun's interface to the model, enabling logging the model and performing post training evaluation:
+    # Apply MLRun's interface to the model, enabling logging and evaluating the model:
     apply_mlrun(model=model, model_name="my_model", x_test=x_test, y_test=y_test)
 
     # Train our model
