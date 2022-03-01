@@ -25,7 +25,6 @@
       },
       {
         "title": "Training & Automatic Logging",
-        "foreground": "startpy.sh",
         "text": "3-training.md"
       },
       {

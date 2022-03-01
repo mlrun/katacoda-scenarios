@@ -2,8 +2,9 @@
 
 First, we will load the project and run the data generation function `gen-iris` as we learned in the previous scenario:
 
+`project = mlrun.load_project("./", init_git=True)`{{execute}}
+
 ```python
-project = mlrun.load_project("./", init_git=True)
 gen_data_run = project.run_function(
     "gen-iris", 
     params={"format": "csv"}, 
@@ -14,15 +15,12 @@ gen_data_run = project.run_function(
 Now, we wish to train a `RandomForestClassifier` model on our training data. For that, we wrote the following training 
 function: `trainer.py`{{open}}
 
-In the training function, you may spot the `apply_mlrun` function in line 30:
+In the training function, you may spot the `apply_mlrun` function in line 30, 
+This will apply MLRun's interface to the model, enabling logging the model and performing post training evaluation
 
 ```python
-...
-
-# Apply MLRun's interface to the model, enabling logging the model and performing post training evaluation:
-apply_mlrun(model=model, model_name="my_model", x_test=x_test, y_test=y_test)
-
-...
+apply_mlrun(model=model, model_name="my_model", 
+            x_test=x_test, y_test=y_test)
 ```
 
 As you can see, applying MLRun on the model object is very easy, and it's very effective. With it, we achieve automatic 

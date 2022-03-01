@@ -1,5 +1,7 @@
 <details>
-<summary>The environment is being set up using <code>pip install mlrun[api] scikit-learn plotly</code> (may take a few minutes)</summary>
+<summary>Installing MLRun package and sklearn, this may take a few minutes!: 
+`> pip install mlrun[api] scikit-learn plotly`
+</summary>
 
 <br>
 
