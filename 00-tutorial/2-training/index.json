@@ -1,0 +1,57 @@
+{
+  "title": "2. Train & Log Models",
+  "description": "Use MLRun frameworks features to improve your model development and research.",
+  "difficulty": "Intermediate",
+  "time": "10",
+  "details": {
+    "assets": {
+        "client": [
+            {"file": "project.yaml", "target": "/root/editor/"},
+            {"file": "local.env", "target": "/root/editor/"},
+            {"file": "remote.env", "target": "/root/editor/"},
+            {"file": "trainer.py", "target": "/root/editor/"},
+            {"file": "gen_iris.py", "target": "/root/editor/"},
+            {"file": "start-mlrundb.sh", "target": "/bin/", "chmod": "+x"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "MLRun Model Development",
+        "text": "1-apply-mlrun.md"
+      },
+      {
+        "title": "Install & Configure MLRun (Locally)",
+        "text": "2-install.md"
+      },
+      {
+        "title": "Training & Automatic Logging",
+        "foreground": "startpy.sh",
+        "text": "3-training.md"
+      },
+      {
+        "title": "Hyperparameters Tuning",
+        "text": "4-hyperparameters-tuning.md"
+      }
+    ],
+    "intro": {
+      "title": "Introduction",
+      "text": "intro.md",
+      "courseData": "background.sh",
+      "code": "foreground.sh"
+    },
+    "finish": {
+      "title": "Additional Reading and Links",
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": false,
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/editor",
+    "showdashboard": true,
+    "dashboards": [{"name": "MLRun UI", "port": 80}]
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
