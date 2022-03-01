@@ -28,8 +28,12 @@
         "text": "3-run.md"
       },
       {
+        "title": "Exploring the Results and Artifacts",
+        "text": "4-outputs.md"
+      },
+      {
         "title": "Hyperparameters Tuning",
-        "text": "4-hyperparameters-tuning.md"
+        "text": "5-hyperparameters-tuning.md"
       }
     ],
     "intro": {
