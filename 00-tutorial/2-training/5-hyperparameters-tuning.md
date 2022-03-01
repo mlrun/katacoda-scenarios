@@ -1,10 +1,9 @@
-## Hyperparameters Tuning
 
 We will now multiple jobs in prallel for **hyperparameters tuning**. We will run a `GridSearch` with couple of 
 parameters, select the best run with respect to the `max accuracy`. (read more about MLRun 
 [Hyper-Param and Iterative jobs](https://docs.mlrun.org/en/latest/hyper-params.html)).
 
-We will run our hyperparameters tuning job by using the keywords arguments: 
+For basic usage we can run our hyperparameters tuning job by using the keywords arguments: 
 
 * `hyperparams` for the hyperparameters options and values of choice.
 * `selector` for specifying how to select the best model.
@@ -27,10 +26,15 @@ individual child runs (called iterations in the MLRun UI).
 
 ## Review the Results
 
-Let's review the results by printing the artifact `iteration_results`:
+When running Hyper-param job the job `results` tab showes us the list and marks the best run:
 
-```print(hp_tuning_run.artifact("iteration_results").as_df().to_string())```{{execute}}
+<img src="./assets/results.png" alt="results" width="400"/>
 
-In addition, you can check our the parallel coordinates plot in the MLRun UI!
+We can also view results by printing the artifact `iteration_results`:
+
+```hp_tuning_run.artifact("iteration_results").as_df()```{{execute}}
+
+MLRun also generates a `parallel coordinates plot` for the run, you can view it in the MLRun UI!
 
 ![parallel_coordinates](./assets/parallel_coordinates.png)
+
