@@ -40,7 +40,7 @@ def main():
 def _parse_args():
     parser = argparse.ArgumentParser(description="Install MLRun Kit interactively")
 
-    parser.add_argument("--chart-version", type=str, default="0.1.15")
+    parser.add_argument("--chart-version", type=str, default="0.1.17")
     parser.add_argument("--registry-url", type=str, default="localhost:5000")
     parser.add_argument("--timeout", type=str, default="10m")
     parser.add_argument("--namespace", type=str, default="mlrun")
@@ -56,11 +56,9 @@ def _resolve_install_command(args):
     --wait \
     --timeout {args.timeout} \
     --version {args.chart_version} \
-    --set nuclio.controller.image.tag=1.7.4-amd64 \
-    --set nuclio.dashboard.image.tag=1.7.4-amd64 \
     --set mlrun.nuclio.uiURL={args.nuclio_ui_url} \
-    --set mlrun.image.tag={args.mlrun_tag} \
-    --set ui.image.tag={args.mlrun_tag} \
+    --set mlrun.api.image.tag={args.mlrun_tag} \
+    --set mlrun.ui.image.tag={args.mlrun_tag} \
     --set jupyterNotebook.mlrunUIURL={args.mlrun_ui_url} \
     --set global.registry.url={args.registry_url} \
     --set jupyterNotebook.image.tag={args.mlrun_tag}"
