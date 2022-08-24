@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Copyright 2021 Iguazio
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#!/usr/bin/env bash
 sed -i "s/localhost:8080/[[HOST_IP]]:8080/" editor/local.env
 echo "start" > /root/state
 docker run -p 8070:8070 -d -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp -e NUCLIO_DASHBOARD_EXTERNAL_IP_ADDRESSES=[[HOST_IP]] --name nuclio-dashboard quay.io/nuclio/dashboard:stable-amd64
